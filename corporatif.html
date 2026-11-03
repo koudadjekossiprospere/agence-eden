@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Événements d’entreprise — Eden Corporate Events · Agence Eden</title>
+<meta name="description" content="Galas, inaugurations, conférences & soirées d’entreprise orchestrés par Agence Eden. Brunchs d’entreprise de 22 $ à 75 $ par personne, brunch VIP en salle de réunion. Montréal et destinations.">
+<meta name="theme-color" content="#F7F2EB">
+<meta property="og:title" content="Événements d’entreprise — Eden Corporate Events · Agence Eden">
+<meta property="og:description" content="Galas, inaugurations, conférences & soirées d’entreprise orchestrés par Agence Eden. Brunchs d’entreprise de 22 $ à 75 $ par personne, brunch VIP en salle de réunion. Montréal et destinations.">
+<meta property="og:locale" content="fr_CA">
+<link rel="alternate" hreflang="fr" href="https://agenceeden.com/corporatif.html" data-lien="corporatif.html">
+<link rel="alternate" hreflang="en" href="https://agenceeden.com/en/corporate.html" data-lien="en/corporate.html">
+<link rel="alternate" hreflang="x-default" href="https://agenceeden.com/corporatif.html">
+<script>
+/* Langue : à l'arrivée sur le site (pas en naviguant d'une page à l'autre), on suit le choix déjà fait par le visiteur,
+   sinon la langue de son navigateur ; une autre langue (ni français ni anglais) garde la page d'arrivée, le français étant la page par défaut (x-default). Les robots des moteurs de recherche ne sont jamais redirigés. */
+(function () {
+  try {
+    var ici = document.documentElement.lang.slice(0, 2);
+    if (document.referrer && document.referrer.indexOf(location.origin) === 0) return;
+    if (/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent) || sessionStorage.getItem('langue-vue')) return;
+    sessionStorage.setItem('langue-vue', '1');
+    var voulue = localStorage.getItem('langue') || ((navigator.languages || [navigator.language]).map(function (l) { return String(l).slice(0, 2).toLowerCase(); }).filter(function (l) { return l === 'fr' || l === 'en'; })[0]);
+    var autre = document.querySelector('link[hreflang="' + voulue + '"]');
+    if (voulue && voulue !== ici && autre) location.replace(autre.getAttribute('data-lien') + location.hash);
+  } catch (e) {}
+})();
+</script>
+<link rel="icon" href="assets/img/monogramme.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/eden.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="page-corporatif">
+<a class="evitement" href="#contenu">Aller au contenu</a>
+
+<header class="entete" data-entete>
+  <div class="entete__barre">
+    <a class="marque" href="index.html" aria-label="Agence Eden, retour à l'accueil">
+      <span class="marque__nom">Agence Eden</span>
+      <span class="marque__sous">Événements, mariages &amp; gastronomie</span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <ul class="nav__liste">
+        <li class="nav__groupe" data-groupe>
+          <button class="nav__lien" type="button" aria-expanded="false" aria-controls="sous-mariages" data-nav="mariages">Mariages <svg class="nav__chevron" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
+          <div class="nav__sous" id="sous-mariages">
+            <a href="mariages.html" data-sous><span class="nav__sous-titre">Planification de mariage</span><span class="nav__sous-info">Eden Royal &amp; Eden Prestige · dès 4 999 $</span></a>
+            <a href="le-plan-eden.html" data-sous><span class="nav__sous-titre">Le Plan Eden</span><span class="nav__sous-info">Guide + fichier Excel · 47 $</span></a>
+            <a href="rsvp.html" data-sous><span class="nav__sous-titre">Site de mariage &amp; RSVP</span><span class="nav__sous-info">Gestion des invités · dès 550 $</span></a>
+          </div>
+        </li>
+        <li><a class="nav__lien" href="gourmet.html" data-nav="gourmet">Eden Gourmet</a></li>
+        <li><a class="nav__lien" href="corporatif.html" data-nav="corporatif" aria-current="page">Entreprises</a></li>
+        <li><a class="nav__lien" href="agence.html" data-nav="agence">L’agence</a></li>
+      </ul>
+    </nav>
+    <a class="entete__cta" href="contact.html" data-nav="contact">Nous contacter</a>
+    <p class="langues" role="group" aria-label="Langue du site"><a href="corporatif.html" hreflang="fr" lang="fr" data-langue="fr" aria-label="Français" aria-current="true">FR</a><span aria-hidden="true">|</span><a href="en/corporate.html" hreflang="en" lang="en" data-langue="en" aria-label="English">EN</a></p>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu" data-burger>
+      <span class="burger__texte">Menu</span><span class="burger__traits" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu" id="menu" data-menu hidden>
+  <nav class="menu__nav" aria-label="Menu">
+    <ol class="menu__liste">
+      <li><a href="index.html" data-nav="accueil"><span>01</span>Accueil</a></li>
+      <li><a href="mariages.html"><span>02</span>Mariages</a></li>
+      <li><a href="le-plan-eden.html"><span>03</span>Le Plan Eden</a></li>
+      <li><a href="rsvp.html"><span>04</span>Site &amp; RSVP</a></li>
+      <li><a href="gourmet.html"><span>05</span>Eden Gourmet</a></li>
+      <li><a href="corporatif.html"><span>06</span>Entreprises</a></li>
+      <li><a href="agence.html"><span>07</span>L’agence</a></li>
+      <li><a href="contact.html"><span>08</span>Contact</a></li>
+    </ol>
+  </nav>
+  <div class="menu__pied">
+    <a class="btn btn--or" href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Réserver un appel découverte</a>
+    <p>Gratuit · 20 minutes · sans obligation</p>
+    <p><a class="lien" href="mailto:info@agenceeden.com">info@agenceeden.com</a> · <a class="lien" href="https://www.instagram.com/edenweddingservices" target="_blank" rel="noopener">Instagram</a></p>
+  </div>
+</div>
+
+<main id="contenu">
+<!-- 01 · OUVERTURE -->
+<section class="entree" id="ouverture" data-chapitre="Entreprises">
+  <div class="enveloppe produit__grille">
+    <div class="entree__texte">
+      <ol class="ariane" data-apparait><li><a href="index.html">Accueil</a></li><li>Entreprises</li></ol>
+      <p class="t-eyebrow" data-apparait>Eden Corporate Events</p>
+      <h1 class="t-h1" data-lignes>Galas, inaugurations, conférences <em>&amp; soirées d’entreprise.</em></h1>
+      <p class="t-lead" data-apparait>Chez Agence Eden, chaque détail compte. Nous travaillons avec passion, excellence et un sens aigu du service.</p>
+      <div class="actions" data-apparait>
+        <a class="btn btn--or" href="contact.html?type=corporatif">Parlez-nous de votre événement</a>
+        <a class="lien lien--fleche" href="#brunchs">Formules brunch</a>
+      </div>
+    </div>
+    <div class="media" style="aspect-ratio:4/5" data-devoile><img src="assets/img/corpo-cocktail-1080.webp" srcset="assets/img/corpo-cocktail-640.webp 640w, assets/img/corpo-cocktail-1080.webp 1080w" width="1792" height="2400" decoding="async" alt="Réception cocktail d’entreprise : flûte de champagne et bouchées sur une table haute, invités de dos" sizes="(min-width: 900px) 45vw, 100vw" loading="eager"></div>
+  </div>
+</section>
+
+<!-- 02 · NOTRE APPROCHE -->
+<section class="chapitre fond-lin" id="approche" data-chapitre="Notre approche">
+  <div class="enveloppe">
+    <div class="entete-section">
+      <p class="t-eyebrow" data-apparait>Pourquoi choisir Eden&nbsp;?</p>
+      <p class="enonce">Chez nous, le luxe se mesure au calme, pas au chaos.</p>
+    </div>
+    <ul class="coches">
+      <li><svg class="coche" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10"/><path d="M6.5 11.5l3 3 6-6.5"/></svg>Sérénité</li>
+      <li><svg class="coche" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10"/><path d="M6.5 11.5l3 3 6-6.5"/></svg>Des prestataires fiables</li>
+      <li><svg class="coche" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10"/><path d="M6.5 11.5l3 3 6-6.5"/></svg>Une planification maîtrisée</li>
+      <li><svg class="coche" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10"/><path d="M6.5 11.5l3 3 6-6.5"/></svg>Une élégance sans stress</li>
+      <li><svg class="coche" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10"/><path d="M6.5 11.5l3 3 6-6.5"/></svg>Un service humain, chaleureux &amp; discret</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 03 · BRUNCHS CORPORATIFS -->
+<section class="chapitre fond-creme" id="brunchs" data-chapitre="Brunchs d’entreprise">
+  <div class="enveloppe">
+    <div class="entete-section">
+      <p class="t-eyebrow" data-apparait>Eden Gourmet · Formules brunch d’entreprise</p>
+      <h2 class="t-h2" data-lignes>Recevoir vos équipes <em>et vos invités.</em></h2>
+    </div>
+    <div class="formules-pro" data-cascade>
+      <article class="formule-pro" data-apparait>
+        <p class="t-eyebrow">Express</p>
+        <h3>Brunch d’entreprise Express</h3>
+        <ul class="inclus"><li>Brunch rapide individuellement emballé</li><li>Option livraison + mise en place minimaliste</li></ul>
+        <p class="prix">22–35 $<small>/ personne</small></p>
+      </article>
+      <article class="formule-pro" data-apparait>
+        <p class="t-eyebrow">Diamant</p>
+        <h3>Brunch d’entreprise Diamant</h3>
+        <ul class="inclus"><li>Station brunch complète</li><li>Crêpes préparées sur place</li><li>Bar à smoothies</li><li>Café haut de gamme / thé</li><li>Mise en place pour entreprise + personnel professionnel</li></ul>
+        <p class="prix">58–75 $<small>/ personne</small></p>
+      </article>
+      <article class="formule-pro" data-apparait>
+        <p class="t-eyebrow">VIP · 10 à 14 personnes</p>
+        <h3>Brunch d’entreprise VIP en salle de réunion</h3>
+        <ul class="inclus"><li>Plateau brunch prestige pour 10–14 personnes</li><li>Mini-crêpes, fruits, viennoiseries, roulés du matin</li><li>Service haut de gamme dans la salle de réunion</li></ul>
+        <p class="prix">320–360 $<small>/ salle de réunion</small></p>
+      </article>
+    </div>
+    <div class="aide-choix" data-apparait>
+      <p>Bar à smoothies, bar à mimosas, chariot à café, stylisme floral Eden… <span class="italique">toutes les options sont sur la carte.</span></p>
+      <a class="lien lien--fleche" href="gourmet.html#options">Voir les options</a>
+    </div>
+  </div>
+</section>
+
+<!-- 04 · FINALE : la photo occupe une moitié d'écran à fond perdu -->
+<section class="moitie fond-lin" id="contact-pro" data-chapitre="Parlons-en">
+  <div class="moitie__image" data-devoile><img src="assets/img/lieu-longue-table-2000.webp" srcset="assets/img/lieu-longue-table-1000.webp 1000w, assets/img/lieu-longue-table-2000.webp 2000w" width="5793" height="3862" loading="lazy" decoding="async" alt="Longue table de réception dressée et fleurie" sizes="(min-width: 900px) 50vw, 100vw"></div>
+  <div class="moitie__corps">
+    <div class="moitie__texte">
+    <p class="t-eyebrow" data-apparait>Eden Corporate Events</p>
+    <h2 class="t-h2" data-lignes>Parlez-nous <em>de votre événement.</em></h2>
+    <p class="t-lead" data-apparait style="max-width:40ch">Nous sommes prêtes à vous accompagner avec soin, excellence et sérénité.</p>
+    <a class="btn btn--or" href="contact.html?type=corporatif" data-apparait>Décrire mon événement</a>
+    <a class="lien lien--fleche" href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener" data-apparait>Ou réserver un appel découverte</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="pied">
+  <div class="enveloppe pied__grille">
+    <div class="pied__intro">
+      <p class="t-h3">Orchestré à la perfection.</p>
+      <p>Mariages, gastronomie et événements d’entreprise. Montréal et destinations.</p>
+      <a class="btn btn--or" href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Réserver un appel découverte</a>
+    </div>
+    <nav class="pied__col" aria-label="Pages">
+      <p class="t-eyebrow">Explorer</p>
+      <ul>
+        <li><a href="mariages.html">Mariages</a></li>
+        <li><a href="le-plan-eden.html">Le Plan Eden</a></li>
+        <li><a href="rsvp.html">Site de mariage &amp; RSVP</a></li>
+        <li><a href="gourmet.html">Eden Gourmet</a></li>
+        <li><a href="corporatif.html">Entreprises</a></li>
+        <li><a href="agence.html">L’agence</a></li>
+      </ul>
+    </nav>
+    <div class="pied__col">
+      <p class="t-eyebrow">Réserver</p>
+      <ul>
+        <li><a href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Appel découverte</a></li>
+        <li><a href="https://tidycal.com/1ydlyw1/clarityhour" target="_blank" rel="noopener">La Session Eden</a></li>
+        <li><a href="https://tidycal.com/1ydlyw1/eden-gourmet-brunch-reservation" target="_blank" rel="noopener">Service brunch</a></li>
+        <li><a href="https://www.agenceeden.com/product-page/le-plan-eden-guide-de-planification-de-mariage-pdfexcel" target="_blank" rel="noopener">Acheter Le Plan Eden</a></li>
+      </ul>
+    </div>
+    <div class="pied__col">
+      <p class="t-eyebrow">Écrire</p>
+      <ul>
+        <li><a href="mailto:info@agenceeden.com">info@agenceeden.com</a></li>
+        <li><a href="https://www.instagram.com/edenweddingservices" target="_blank" rel="noopener">@edenweddingservices</a></li>
+        <li><a href="contact.html">Formulaire de contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="enveloppe pied__bas">
+    <p class="pied__signature" aria-hidden="true">Agence Eden</p>
+    <p class="pied__legal">© 2026 Agence Eden · Événements, mariages &amp; gastronomie</p>
+  </div>
+</footer>
+
+<div class="barre-mobile" data-barre-mobile>
+  <button class="barre-mobile__chapitres" type="button" aria-expanded="false" aria-controls="sommaire" data-sommaire-bouton>
+    <svg class="anneau" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15" /><circle class="anneau__progres" cx="18" cy="18" r="15" pathLength="100" /></svg>
+    <span class="barre-mobile__texte"><span data-chapitre-num>01</span><span data-chapitre-nom>Ouverture</span></span>
+  </button>
+  <a class="btn btn--or btn--petit" href="contact.html?type=corporatif">Nous écrire</a>
+</div>
+<div class="sommaire" id="sommaire" data-sommaire hidden>
+  <p class="t-eyebrow">Sur cette page</p>
+  <ol class="sommaire__liste" data-sommaire-liste></ol>
+  <button class="lien sommaire__haut" type="button" data-haut>Revenir en haut ↑</button>
+</div>
+
+<script src="assets/vendor/gsap.min.js" defer></script>
+<script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/vendor/lenis.min.js" defer></script>
+<script src="assets/js/eden.js" defer></script>
+</body>
+</html>

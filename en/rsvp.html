@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wedding Website & RSVP — Guest Management · Agence Eden</title>
+<meta name="description" content="From creating your wedding website to fully managing your RSVPs: Essential $550, Signature $850, Experience $1,400+. Website created in 72 hours. Montreal & destinations.">
+<meta name="theme-color" content="#F7F2EB">
+<meta property="og:title" content="Wedding Website & RSVP — Guest Management · Agence Eden">
+<meta property="og:description" content="From creating your wedding website to fully managing your RSVPs: Essential $550, Signature $850, Experience $1,400+. Website created in 72 hours. Montreal & destinations.">
+<meta property="og:locale" content="en_CA">
+<link rel="alternate" hreflang="fr" href="https://agenceeden.com/rsvp.html" data-lien="../rsvp.html">
+<link rel="alternate" hreflang="en" href="https://agenceeden.com/en/rsvp.html" data-lien="rsvp.html">
+<link rel="alternate" hreflang="x-default" href="https://agenceeden.com/rsvp.html">
+<script>
+/* Langue : à l'arrivée sur le site (pas en naviguant d'une page à l'autre), on suit le choix déjà fait par le visiteur,
+   sinon la langue de son navigateur ; une autre langue (ni français ni anglais) garde la page d'arrivée, le français étant la page par défaut (x-default). Les robots des moteurs de recherche ne sont jamais redirigés. */
+(function () {
+  try {
+    var ici = document.documentElement.lang.slice(0, 2);
+    if (document.referrer && document.referrer.indexOf(location.origin) === 0) return;
+    if (/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent) || sessionStorage.getItem('langue-vue')) return;
+    sessionStorage.setItem('langue-vue', '1');
+    var voulue = localStorage.getItem('langue') || ((navigator.languages || [navigator.language]).map(function (l) { return String(l).slice(0, 2).toLowerCase(); }).filter(function (l) { return l === 'fr' || l === 'en'; })[0]);
+    var autre = document.querySelector('link[hreflang="' + voulue + '"]');
+    if (voulue && voulue !== ici && autre) location.replace(autre.getAttribute('data-lien') + location.hash);
+  } catch (e) {}
+})();
+</script>
+<link rel="icon" href="../assets/img/monogramme.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/fonts.css">
+<link rel="stylesheet" href="../assets/css/eden.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="page-rsvp">
+<a class="evitement" href="#contenu">Skip to content</a>
+
+<header class="entete" data-entete>
+  <div class="entete__barre">
+    <a class="marque" href="index.html" aria-label="Agence Eden, back to home">
+      <span class="marque__nom">Agence Eden</span>
+      <span class="marque__sous">Events, weddings &amp; gastronomy</span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <ul class="nav__liste">
+        <li class="nav__groupe" data-groupe>
+          <button class="nav__lien" type="button" aria-expanded="false" aria-controls="sous-mariages" data-nav="mariages" aria-current="page">Weddings <svg class="nav__chevron" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
+          <div class="nav__sous" id="sous-mariages">
+            <a href="weddings.html" data-sous><span class="nav__sous-titre">Wedding planning</span><span class="nav__sous-info">Eden Royal &amp; Eden Prestige · from $4,999</span></a>
+            <a href="the-eden-plan.html" data-sous><span class="nav__sous-titre">The Eden Plan</span><span class="nav__sous-info">Guide + Excel file · $47</span></a>
+            <a href="rsvp.html" data-sous aria-current="page"><span class="nav__sous-titre">Wedding website &amp; RSVP</span><span class="nav__sous-info">Guest management · from $550</span></a>
+          </div>
+        </li>
+        <li><a class="nav__lien" href="gourmet.html" data-nav="gourmet">Eden Gourmet</a></li>
+        <li><a class="nav__lien" href="corporate.html" data-nav="corporatif">Corporate</a></li>
+        <li><a class="nav__lien" href="agency.html" data-nav="agence">The agency</a></li>
+      </ul>
+    </nav>
+    <a class="entete__cta" href="contact.html" data-nav="contact">Contact us</a>
+    <p class="langues" role="group" aria-label="Site language"><a href="../rsvp.html" hreflang="fr" lang="fr" data-langue="fr" aria-label="Français">FR</a><span aria-hidden="true">|</span><a href="rsvp.html" hreflang="en" lang="en" data-langue="en" aria-label="English" aria-current="true">EN</a></p>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu" data-burger>
+      <span class="burger__texte">Menu</span><span class="burger__traits" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu" id="menu" data-menu hidden>
+  <nav class="menu__nav" aria-label="Menu">
+    <ol class="menu__liste">
+      <li><a href="index.html" data-nav="accueil"><span>01</span>Home</a></li>
+      <li><a href="weddings.html"><span>02</span>Weddings</a></li>
+      <li><a href="the-eden-plan.html"><span>03</span>The Eden Plan</a></li>
+      <li><a href="rsvp.html"><span>04</span>Website &amp; RSVP</a></li>
+      <li><a href="gourmet.html"><span>05</span>Eden Gourmet</a></li>
+      <li><a href="corporate.html"><span>06</span>Corporate</a></li>
+      <li><a href="agency.html"><span>07</span>The agency</a></li>
+      <li><a href="contact.html"><span>08</span>Contact</a></li>
+    </ol>
+  </nav>
+  <div class="menu__pied">
+    <a class="btn btn--or" href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Book a discovery call</a>
+    <p>Free · 20 minutes · no obligation</p>
+    <p><a class="lien" href="mailto:info@agenceeden.com">info@agenceeden.com</a> · <a class="lien" href="https://www.instagram.com/edenweddingservices" target="_blank" rel="noopener">Instagram</a></p>
+  </div>
+</div>
+
+<main id="contenu">
+<!-- 01 · OUVERTURE -->
+<section class="entree" id="ouverture" data-chapitre="Website & RSVP">
+  <div class="enveloppe produit__grille">
+    <div class="entree__texte">
+      <ol class="ariane" data-apparait><li><a href="index.html">Home</a></li><li><a href="weddings.html">Weddings</a></li><li>Website &amp; RSVP</li></ol>
+      <p class="t-eyebrow" data-apparait>Wedding website &amp; guest management</p>
+      <h1 class="t-h1" data-lignes>Simplify the way you <em>manage your guests.</em></h1>
+      <p class="t-lead" data-apparait>From creating your wedding website to fully managing your RSVPs… We are by your side for smooth, elegant and stress-free organization.</p>
+      <div class="actions" data-apparait>
+        <a class="btn btn--or" href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Book your discovery call</a>
+        <a class="lien lien--fleche" href="#tarifs">See the packages</a>
+      </div>
+      <p class="t-petit" data-apparait>Montreal &amp; destinations</p>
+    </div>
+    <div class="collage">
+      <div class="media" data-devoile><img src="../assets/img/rsvp-site-ordinateur-1080.webp" srcset="../assets/img/rsvp-site-ordinateur-640.webp 640w, ../assets/img/rsvp-site-ordinateur-1080.webp 1080w" width="1080" height="1350" decoding="async" alt="Wedding website with RSVP displayed on a laptop, surrounded by roses" sizes="(min-width: 900px) 36vw, 80vw" loading="eager"></div>
+      <div class="media" data-devoile><img src="../assets/img/rsvp-faire-part-or-1080.webp" srcset="../assets/img/rsvp-faire-part-or-640.webp 640w, ../assets/img/rsvp-faire-part-or-1080.webp 1080w" width="1080" height="1350" loading="lazy" decoding="async" alt="Gold-foiled wedding invitation resting on satin fabric" sizes="(min-width: 900px) 20vw, 46vw"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 · LE PROBLÈME -->
+<section class="chapitre chapitre--ecran fond-lin" id="probleme" data-chapitre="The problem">
+  <div class="enveloppe produit__grille">
+    <div>
+      <p class="t-eyebrow" data-apparait style="margin-bottom:24px">The problem</p>
+      <ul class="trop" data-cascade>
+        <li data-apparait>Too many messages.</li>
+        <li data-apparait>Too many follow-ups.</li>
+        <li data-apparait><em>Too much confusion.</em></li>
+      </ul>
+    </div>
+    <div class="prose">
+      <p class="t-lead" data-apparait>Between confirmations, last-minute changes, allergies, children, guests who don’t reply… managing your guests quickly becomes a headache.</p>
+      <ul class="pile" aria-label="What makes guest management complicated">
+        <li>Confirmations</li><li>Last-minute changes</li><li>Allergies</li><li>Children</li><li>Guests who don’t reply</li>
+      </ul>
+      <p class="t-h3" data-apparait>And yet… <em>this is not what you should be going through.</em></p>
+    </div>
+  </div>
+</section>
+
+<!-- 03 · LA SOLUTION -->
+<section class="chapitre fond-creme" id="solution" data-chapitre="The solution">
+  <div class="enveloppe produit__grille">
+    <div class="media" style="aspect-ratio:4/5" data-devoile><img src="../assets/img/rsvp-site-mobile-1080.webp" srcset="../assets/img/rsvp-site-mobile-640.webp 640w, ../assets/img/rsvp-site-mobile-1080.webp 1080w" width="1080" height="1350" loading="lazy" decoding="async" alt="Elegant wedding website with a photo of the couple and an RSVP button" sizes="(min-width: 900px) 45vw, 100vw"></div>
+    <div class="prose">
+      <p class="t-eyebrow" data-apparait>The solution</p>
+      <h2 class="t-h2" data-lignes>Simple, structured <em>and professional management.</em></h2>
+      <ul class="coches" style="grid-template-columns:1fr">
+        <li><svg class="coche" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10"/><path d="M6.5 11.5l3 3 6-6.5"/></svg>Creation of your wedding website</li>
+        <li><svg class="coche" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10"/><path d="M6.5 11.5l3 3 6-6.5"/></svg>RSVP management</li>
+        <li><svg class="coche" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10"/><path d="M6.5 11.5l3 3 6-6.5"/></svg>Automatic follow-ups</li>
+        <li><svg class="coche" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10"/><path d="M6.5 11.5l3 3 6-6.5"/></svg>Guest organization</li>
+        <li><svg class="coche" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10"/><path d="M6.5 11.5l3 3 6-6.5"/></svg>Digital seating chart</li>
+      </ul>
+      <p class="italique" data-apparait>For a seamless experience, for you and your guests.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 04 · LES FORMULES -->
+<section class="chapitre fond-lin" id="tarifs" data-chapitre="The packages">
+  <div class="enveloppe">
+    <div class="entete-section">
+      <p class="t-eyebrow" data-apparait>The packages</p>
+      <h2 class="t-h2" data-lignes>Three packages, <em>depending on the support you want.</em></h2>
+    </div>
+    <div class="tarifs" data-cascade>
+      <article class="tarif" data-apparait>
+        <h3 class="tarif__nom">Essential</h3>
+        <p class="prix">$550</p>
+        <ul class="inclus"><li>Wedding website</li><li>Simple RSVP</li><li>1 language</li><li>Up to 120 guests</li></ul>
+      </article>
+      <article class="tarif" data-apparait>
+        <h3 class="tarif__nom">Signature</h3>
+        <p class="prix">$850</p>
+        <ul class="inclus"><li>Bilingual website</li><li>Multiple events</li><li>RSVP + tracking</li><li>Guest reminders</li><li>Seating chart (PleaseFindYourSeat)</li></ul>
+      </article>
+      <article class="tarif" data-apparait>
+        <h3 class="tarif__nom">Experience</h3>
+        <p class="prix">$1,400 <small>and up</small></p>
+        <ul class="inclus"><li>Full guest management</li><li>Personalized support</li><li>RSVP coordination</li><li>Optional presence on the big day</li></ul>
+      </article>
+    </div>
+    <div class="aide-choix" data-apparait>
+      <p>Not sure which package is right for you? <span class="italique">Let’s talk about it during the discovery call.</span></p>
+      <a class="btn btn--encre" href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Book the call</a>
+    </div>
+  </div>
+</section>
+
+<!-- 05 · COMMENT ÇA FONCTIONNE -->
+<section class="chapitre fond-creme" id="parcours" data-chapitre="How it works">
+  <div class="enveloppe">
+    <div class="entete-section">
+      <p class="t-eyebrow" data-apparait>How does it work?</p>
+      <h2 class="t-h2" data-lignes>Simple, fast, <em>effective.</em></h2>
+    </div>
+    <ol class="etapes" style="--n:4">
+      <li class="etape"><span class="etape__num">1</span><h3>Discovery call</h3></li>
+      <li class="etape"><span class="etape__num">2</span><h3>Website creation</h3><p>Within 72&nbsp;hours.</p></li>
+      <li class="etape"><span class="etape__num">3</span><h3>Managing confirmations</h3></li>
+      <li class="etape"><span class="etape__num">4</span><h3>Final guest organization</h3></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 06 · FINALE : la table de réception en plein écran, la carte posée dessus -->
+<section class="finale-fond" id="rencontre" data-chapitre="Let’s meet">
+  <div class="finale-fond__image"><img src="../assets/img/reception-mariage-2000.webp" srcset="../assets/img/reception-mariage-1000.webp 1000w, ../assets/img/reception-mariage-2000.webp 2000w" width="2400" height="1792" loading="lazy" decoding="async" alt="Long reception table set under a pergola, with candles and a garland of white roses" sizes="100vw" data-recul></div>
+  <div class="enveloppe finale-fond__calque">
+    <div class="finale-fond__carte">
+    <p class="t-eyebrow" data-apparait>Getting married soon?</p>
+    <h2 class="t-h2" data-lignes>Let us take care of your guests <em>and focus on what matters most.</em></h2>
+    <a class="btn btn--or" href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener" data-apparait>Book your discovery call</a>
+    <a class="lien lien--fleche" href="contact.html?type=mariage" data-apparait>Or write to us</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="pied">
+  <div class="enveloppe pied__grille">
+    <div class="pied__intro">
+      <p class="t-h3">Perfectly Orchestrated.</p>
+      <p>Weddings, gastronomy and corporate events. Montreal &amp; destinations.</p>
+      <a class="btn btn--or" href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Book a discovery call</a>
+    </div>
+    <nav class="pied__col" aria-label="Pages">
+      <p class="t-eyebrow">Explore</p>
+      <ul>
+        <li><a href="weddings.html">Weddings</a></li>
+        <li><a href="the-eden-plan.html">The Eden Plan</a></li>
+        <li><a href="rsvp.html">Wedding website &amp; RSVP</a></li>
+        <li><a href="gourmet.html">Eden Gourmet</a></li>
+        <li><a href="corporate.html">Corporate</a></li>
+        <li><a href="agency.html">The agency</a></li>
+      </ul>
+    </nav>
+    <div class="pied__col">
+      <p class="t-eyebrow">Book</p>
+      <ul>
+        <li><a href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Discovery call</a></li>
+        <li><a href="https://tidycal.com/1ydlyw1/clarityhour" target="_blank" rel="noopener">The Eden Session</a></li>
+        <li><a href="https://tidycal.com/1ydlyw1/eden-gourmet-brunch-reservation" target="_blank" rel="noopener">Brunch service</a></li>
+        <li><a href="https://www.agenceeden.com/product-page/the-eden-plan-wedding-planning-guide-pdf-excel" target="_blank" rel="noopener">Buy The Eden Plan</a></li>
+      </ul>
+    </div>
+    <div class="pied__col">
+      <p class="t-eyebrow">Write to us</p>
+      <ul>
+        <li><a href="mailto:info@agenceeden.com">info@agenceeden.com</a></li>
+        <li><a href="https://www.instagram.com/edenweddingservices" target="_blank" rel="noopener">@edenweddingservices</a></li>
+        <li><a href="contact.html">Contact form</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="enveloppe pied__bas">
+    <p class="pied__signature" aria-hidden="true">Agence Eden</p>
+    <p class="pied__legal">© 2026 Agence Eden · Events, weddings &amp; gastronomy</p>
+  </div>
+</footer>
+
+<div class="barre-mobile" data-barre-mobile>
+  <button class="barre-mobile__chapitres" type="button" aria-expanded="false" aria-controls="sommaire" data-sommaire-bouton>
+    <svg class="anneau" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15" /><circle class="anneau__progres" cx="18" cy="18" r="15" pathLength="100" /></svg>
+    <span class="barre-mobile__texte"><span data-chapitre-num>01</span><span data-chapitre-nom>Opening</span></span>
+  </button>
+  <a class="btn btn--or btn--petit" href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Discovery call</a>
+</div>
+<div class="sommaire" id="sommaire" data-sommaire hidden>
+  <p class="t-eyebrow">On this page</p>
+  <ol class="sommaire__liste" data-sommaire-liste></ol>
+  <button class="lien sommaire__haut" type="button" data-haut>Back to top ↑</button>
+</div>
+
+<script src="../assets/vendor/gsap.min.js" defer></script>
+<script src="../assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="../assets/vendor/lenis.min.js" defer></script>
+<script src="../assets/js/eden.js" defer></script>
+</body>
+</html>

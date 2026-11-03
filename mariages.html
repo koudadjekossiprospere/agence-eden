@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mariages — Eden Wedding Services · Agence Eden</title>
+<meta name="description" content="Mariages élégants, moments inoubliables. Planification complète (Eden Royal, dès 5 999 $) ou partielle (Eden Prestige, dès 4 999 $), coordination du jour J. Montréal et destinations.">
+<meta name="theme-color" content="#F7F2EB">
+<meta property="og:title" content="Mariages — Eden Wedding Services · Agence Eden">
+<meta property="og:description" content="Mariages élégants, moments inoubliables. Planification complète (Eden Royal, dès 5 999 $) ou partielle (Eden Prestige, dès 4 999 $), coordination du jour J. Montréal et destinations.">
+<meta property="og:locale" content="fr_CA">
+<link rel="alternate" hreflang="fr" href="https://agenceeden.com/mariages.html" data-lien="mariages.html">
+<link rel="alternate" hreflang="en" href="https://agenceeden.com/en/weddings.html" data-lien="en/weddings.html">
+<link rel="alternate" hreflang="x-default" href="https://agenceeden.com/mariages.html">
+<script>
+/* Langue : à l'arrivée sur le site (pas en naviguant d'une page à l'autre), on suit le choix déjà fait par le visiteur,
+   sinon la langue de son navigateur ; une autre langue (ni français ni anglais) garde la page d'arrivée, le français étant la page par défaut (x-default). Les robots des moteurs de recherche ne sont jamais redirigés. */
+(function () {
+  try {
+    var ici = document.documentElement.lang.slice(0, 2);
+    if (document.referrer && document.referrer.indexOf(location.origin) === 0) return;
+    if (/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent) || sessionStorage.getItem('langue-vue')) return;
+    sessionStorage.setItem('langue-vue', '1');
+    var voulue = localStorage.getItem('langue') || ((navigator.languages || [navigator.language]).map(function (l) { return String(l).slice(0, 2).toLowerCase(); }).filter(function (l) { return l === 'fr' || l === 'en'; })[0]);
+    var autre = document.querySelector('link[hreflang="' + voulue + '"]');
+    if (voulue && voulue !== ici && autre) location.replace(autre.getAttribute('data-lien') + location.hash);
+  } catch (e) {}
+})();
+</script>
+<link rel="icon" href="assets/img/monogramme.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/eden.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="page-mariages">
+<a class="evitement" href="#contenu">Aller au contenu</a>
+
+<header class="entete" data-entete>
+  <div class="entete__barre">
+    <a class="marque" href="index.html" aria-label="Agence Eden, retour à l'accueil">
+      <span class="marque__nom">Agence Eden</span>
+      <span class="marque__sous">Événements, mariages &amp; gastronomie</span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <ul class="nav__liste">
+        <li class="nav__groupe" data-groupe>
+          <button class="nav__lien" type="button" aria-expanded="false" aria-controls="sous-mariages" data-nav="mariages" aria-current="page">Mariages <svg class="nav__chevron" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
+          <div class="nav__sous" id="sous-mariages">
+            <a href="mariages.html" data-sous aria-current="page"><span class="nav__sous-titre">Planification de mariage</span><span class="nav__sous-info">Eden Royal &amp; Eden Prestige · dès 4 999 $</span></a>
+            <a href="le-plan-eden.html" data-sous><span class="nav__sous-titre">Le Plan Eden</span><span class="nav__sous-info">Guide + fichier Excel · 47 $</span></a>
+            <a href="rsvp.html" data-sous><span class="nav__sous-titre">Site de mariage &amp; RSVP</span><span class="nav__sous-info">Gestion des invités · dès 550 $</span></a>
+          </div>
+        </li>
+        <li><a class="nav__lien" href="gourmet.html" data-nav="gourmet">Eden Gourmet</a></li>
+        <li><a class="nav__lien" href="corporatif.html" data-nav="corporatif">Entreprises</a></li>
+        <li><a class="nav__lien" href="agence.html" data-nav="agence">L’agence</a></li>
+      </ul>
+    </nav>
+    <a class="entete__cta" href="contact.html" data-nav="contact">Nous contacter</a>
+    <p class="langues" role="group" aria-label="Langue du site"><a href="mariages.html" hreflang="fr" lang="fr" data-langue="fr" aria-label="Français" aria-current="true">FR</a><span aria-hidden="true">|</span><a href="en/weddings.html" hreflang="en" lang="en" data-langue="en" aria-label="English">EN</a></p>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu" data-burger>
+      <span class="burger__texte">Menu</span><span class="burger__traits" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu" id="menu" data-menu hidden>
+  <nav class="menu__nav" aria-label="Menu">
+    <ol class="menu__liste">
+      <li><a href="index.html" data-nav="accueil"><span>01</span>Accueil</a></li>
+      <li><a href="mariages.html"><span>02</span>Mariages</a></li>
+      <li><a href="le-plan-eden.html"><span>03</span>Le Plan Eden</a></li>
+      <li><a href="rsvp.html"><span>04</span>Site &amp; RSVP</a></li>
+      <li><a href="gourmet.html"><span>05</span>Eden Gourmet</a></li>
+      <li><a href="corporatif.html"><span>06</span>Entreprises</a></li>
+      <li><a href="agence.html"><span>07</span>L’agence</a></li>
+      <li><a href="contact.html"><span>08</span>Contact</a></li>
+    </ol>
+  </nav>
+  <div class="menu__pied">
+    <a class="btn btn--or" href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Réserver un appel découverte</a>
+    <p>Gratuit · 20 minutes · sans obligation</p>
+    <p><a class="lien" href="mailto:info@agenceeden.com">info@agenceeden.com</a> · <a class="lien" href="https://www.instagram.com/edenweddingservices" target="_blank" rel="noopener">Instagram</a></p>
+  </div>
+</div>
+
+<main id="contenu">
+<!-- 01 · OUVERTURE -->
+<section class="entree" id="ouverture" data-chapitre="Ouverture">
+  <div class="enveloppe entree__grille">
+    <div class="entree__texte">
+      <ol class="ariane" data-apparait><li><a href="index.html">Accueil</a></li><li>Mariages</li></ol>
+      <p class="t-eyebrow" data-apparait>Eden Wedding Services</p>
+      <h1 class="t-h1" data-lignes>Mariages élégants. <em>Moments inoubliables.</em></h1>
+    </div>
+    <div class="entree__cote" data-cascade>
+      <p class="t-lead" data-apparait>Nous orchestrons des mariages sans stress avec une approche raffinée, humaine et organisée.</p>
+      <div class="actions" data-apparait>
+        <a class="btn btn--or" href="https://tidycal.com/1ydlyw1/appel-decouverte-eden-wedding-services" target="_blank" rel="noopener">Planifiez une consultation gratuite</a>
+        <a class="lien lien--fleche" href="#formules">Voir les formules</a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="ecran-film" aria-hidden="true">
+  <div class="ecran-film__colle">
+    <div class="ecran-film__cadre">
+      <video data-boucle autoplay muted loop playsinline preload="auto" poster="assets/video/film-triptyque-affiche.webp">
+        <source src="assets/video/film-triptyque.mp4" type="video/mp4">
+      </video>
+      <div class="ecran-film__filets"><span></span><span></span><span></span></div>
+      <p class="ecran-film__legende">Des mariages qui marquent pour toujours.</p>
+    </div>
+  </div>
+</div>
+
+<!-- 02 · NOTRE RÔLE -->
+<section class="chapitre fond-creme" id="role" data-chapitre="Notre rôle">
+  <div class="enveloppe">
+    <p class="t-eyebrow" data-apparait style="margin-bottom:28px">Notre rôle</p>
+    <p class="enonce">Chez Eden Wedding Services, nous croyons que le luxe commence par la sérénité.</p>
+    <div class="enonce-suite">
+      <p class="t-lead" data-apparait>Notre rôle est de transformer votre vision en une célébration fluide, élégante et pensée dans chaque détail.</p>
+      <p data-apparait style="--i:1">De la planification stratégique à la coordination du Jour&nbsp;J, nous vous accompagnons avec douceur, précision et excellence.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 03 · LES FORMULES -->
+<section class="chapitre fond-lin" id="formules" data-chapitre="Les formules">
+  <div class="enveloppe">
+    <div class="entete-section">
+      <p class="t-eyebrow" data-apparait>Nos services</p>
+      <h2 class="t-h2" data-lignes>Deux façons de vous accompagner, <em>selon où vous en êtes.</em></h2>
+    </div>
+    <div class="cartes-formules" data-cascade>
+      <article class="carte-formule" id="royal" data-apparait>
+        <header class="carte-formule__tete">
+          <p class="t-eyebrow">Planification complète</p>
+          <h3 class="carte-formule__nom">Eden Royal</h3>
+          <p class="carte-formule__pour">Pour les mariés qui veulent la paix totale, du début à la fin.</p>
+        </header>
+        <p>La planification complète de A à Z. Nous gérons chaque détail&nbsp;:</p>
+        <ul class="inclus">
+          <li>Gestion de budget</li>
+          <li>Recherche et gestion des fournisseurs et prestataires</li>
+          <li>Gestion des invités</li>
+          <li>Stylisme et planche d’inspiration</li>
+          <li>Planification sur mesure</li>
+          <li>Coordination complète du Jour&nbsp;J avec une équipe Eden Ladies attitrée</li>
+        </ul>
+        <p class="ideal"><strong>Idéal pour vous si</strong>vous avez un grand projet et peu de temps.</p>
+        <div class="carte-formule__pied">
+          <p class="prix"><small>À partir de</small>5 999 $</p>
+          <a class="btn btn--encre" href="https://tidycal.com/1ydlyw1/appel-decouverte-eden-wedding-services" target="_blank" rel="noopener">Parler de mon projet</a>
+        </div>
+      </article>
+      <article class="carte-formule" id="prestige" data-apparait>
+        <header class="carte-formule__tete">
+          <p class="t-eyebrow">Planification partielle</p>
+          <h3 class="carte-formule__nom">Eden Prestige</h3>
+          <p class="carte-formule__pour">Pour les mariés qui veulent un soutien expert sur certains aspects.</p>
+        </header>
+        <p>Vous avez commencé vos préparatifs&nbsp;? Nous prenons le relais, ajustons vos choix et assurons la coordination finale pour que tout soit fluide et élégant.</p>
+        <p class="ideal"><strong>Idéal pour vous si</strong>vous avez commencé, mais vous vous sentez déjà débordés et voulez un guide professionnel.</p>
+        <div class="carte-formule__pied">
+          <p class="prix"><small>À partir de</small>4 999 $</p>
+          <a class="btn btn--encre" href="https://tidycal.com/1ydlyw1/appel-decouverte-eden-wedding-services" target="_blank" rel="noopener">Parler de mon projet</a>
+        </div>
+      </article>
+    </div>
+    <div class="aide-choix" data-apparait>
+      <p>Vous préférez organiser votre mariage vous-mêmes&nbsp;? <span class="italique">La méthode d’une organisatrice de mariages, entre vos mains.</span></p>
+      <a class="lien lien--fleche" href="le-plan-eden.html">Le Plan Eden · 47 $</a>
+    </div>
+  </div>
+</section>
+
+<!-- 04 · LA MÉTHODE : l'écran se fige, les trois mots s'allument l'un après l'autre au fil du défilement -->
+<section class="chapitre fond-creme methode methode--estampe" id="methode" data-chapitre="La méthode" data-methode>
+  <div class="methode__scene">
+    <div class="methode__fonds" aria-hidden="true">
+      <div class="methode__fond"><img src="assets/img/methode-paix-2000.webp" srcset="assets/img/methode-paix-1000.webp 1000w, assets/img/methode-paix-2000.webp 2000w" width="3576" height="2235" loading="lazy" decoding="async" alt="" sizes="100vw"></div>
+      <div class="methode__fond"><img src="assets/img/methode-precision-2000.webp" srcset="assets/img/methode-precision-1000.webp 1000w, assets/img/methode-precision-2000.webp 2000w" width="5000" height="3333" loading="lazy" decoding="async" alt="" sizes="100vw"></div>
+      <div class="methode__fond"><img src="assets/img/lieu-salle-2000.webp" srcset="assets/img/lieu-salle-1000.webp 1000w, assets/img/lieu-salle-2000.webp 2000w" width="5865" height="3915" loading="lazy" decoding="async" alt="" sizes="100vw"></div>
+    </div>
+    <div class="enveloppe methode__grille">
+      <p class="t-eyebrow methode__titre">Notre méthode</p>
+      <ol class="methode__liste">
+        <li class="methode__etape est-actif">
+          <h3 class="methode__mot"><span class="methode__num">01</span><span class="methode__terme">Paix</span></h3>
+          <p class="methode__phrase t-h3">Vous êtes guidés, rassurés, accompagnés.</p>
+        </li>
+        <li class="methode__etape">
+          <h3 class="methode__mot"><span class="methode__num">02</span><span class="methode__terme">Précision</span></h3>
+          <p class="methode__phrase t-h3">Listes de vérification, échéanciers, suivi rigoureux.</p>
+        </li>
+        <li class="methode__etape">
+          <h3 class="methode__mot"><span class="methode__num">03</span><span class="methode__terme">Présence</span></h3>
+          <p class="methode__phrase t-h3">Sourire, calme et maîtrise le jour&nbsp;J.</p>
+        </li>
+      </ol>
+      <div class="methode__fin">
+        <p class="t-lead">Nous ne faisons pas que planifier un mariage.</p>
+        <p>Nous créons une expérience fluide, structurée et élégante.</p>
+      </div>
+      <p class="methode__progres" aria-hidden="true"><span class="methode__compte">01</span><span class="methode__barre"></span><span>03</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- 05 · TÉMOIGNAGES -->
+<section class="chapitre fond-lin" id="temoignages" data-chapitre="Ils témoignent">
+  <div class="enveloppe">
+    <div class="entete-section">
+      <p class="t-eyebrow" data-apparait>Ils nous ont confié leur grand jour</p>
+      <h2 class="t-h2" data-lignes>Mots de mariés</h2>
+    </div>
+    <div class="citations" data-cascade>
+      <figure class="citation citation--grande" data-apparait>
+        <blockquote><p>Eden Wedding Services a été présente, attentive à l’écoute de toutes nos attentes, toujours là pour nous conseiller, apaiser et guider à chaque étape. Franchement, Eden Wedding Services a tout géré du début à la fin avec un professionnalisme et une douceur rares.</p></blockquote>
+        <figcaption>Théo &amp; Amandine</figcaption>
+      </figure>
+      <figure class="citation" data-apparait>
+        <blockquote><p>Un immense merci à Eden Services pour avoir fait de notre journée de mariage un moment absolument parfait&nbsp;! Nous avons été accompagnés et soutenus à chaque étape de la planification, ce qui a été un véritable soulagement.</p></blockquote>
+        <figcaption>Arsène &amp; Deborah</figcaption>
+      </figure>
+      <figure class="citation" data-apparait>
+        <blockquote><p>Chaque détail était prévu et réfléchi et tout répondait à nos attentes&nbsp;! Toute l’équipe d’Eden a fait partie de notre moment et fera à jamais partie de notre histoire&nbsp;! Merci à Mireille, pour tout le soutien depuis le jour 1&nbsp;!</p></blockquote>
+        <figcaption>Mélanie &amp; Thomas</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 06 · LE FILM : la photo occupe tout l'écran, le texte et la lecture par-dessus ; le film se lance sur place, « Fermer » ou quitter la section l'arrête -->
+<section class="film" id="film" data-chapitre="Le film" data-film>
+  <div class="film__fond" aria-hidden="true">
+    <img src="assets/img/film-ecran-2560.webp" srcset="assets/img/film-ecran-1280.webp 1280w, assets/img/film-ecran-1920.webp 1920w, assets/img/film-ecran-2560.webp 2560w" width="2560" height="1600" loading="lazy" decoding="async" class="film__fond--paysage" alt="" sizes="100vw" data-recul>
+    <img src="assets/img/film-ecran-portrait-1080.webp" srcset="assets/img/film-ecran-portrait-640.webp 640w, assets/img/film-ecran-portrait-1080.webp 1080w" width="1080" height="1920" loading="lazy" decoding="async" class="film__fond--portrait" alt="" sizes="100vw">
+  </div>
+  <div class="film__texte">
+    <p class="t-eyebrow">Le film</p>
+    <h2 class="film__titre">Une minute <em>de grands jours.</em></h2>
+    <p class="film__description">Le film d’Eden Wedding Services&nbsp;: robes, fleurs, premières danses et sourires de nos mariés, à regarder avec le son.</p>
+    <div class="film__action">
+      <button class="film__jouer" type="button">
+        <span class="film__disque" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8.5 6.9v10.2c0 .8.9 1.3 1.6.9l8.2-5.1c.6-.4.6-1.4 0-1.8l-8.2-5.1c-.7-.4-1.6.1-1.6.9z"/></svg></span>
+        <span class="film__libelle">Lire le film <small>1&nbsp;min&nbsp;06 · avec le son</small></span>
+      </button>
+    </div>
+  </div>
+  <div class="film__lecteur" hidden>
+    <canvas class="film__ambiance" width="48" height="27" aria-hidden="true"></canvas>
+    <video preload="none" playsinline controls>
+      <source src="assets/video/eden-wedding-services-1080.mp4" type="video/mp4">
+    </video>
+    <button class="film__fermer" type="button">Fermer le film <span aria-hidden="true">×</span></button>
+  </div>
+</section>
+
+<!-- 07 · POUR ALLER PLUS LOIN -->
+<section class="chapitre fond-lin" id="complements" data-chapitre="Services complémentaires">
+  <div class="enveloppe">
+    <div class="entete-section">
+      <p class="t-eyebrow" data-apparait>Services complémentaires</p>
+      <h2 class="t-h2" data-lignes>Pour une organisation fluide, <em>élégante et sans stress.</em></h2>
+    </div>
+    <div class="passerelles" data-cascade>
+      <article class="passerelle" data-apparait>
+        <div class="media"><img src="assets/img/rsvp-faire-part-1080.webp" srcset="assets/img/rsvp-faire-part-640.webp 640w, assets/img/rsvp-faire-part-1080.webp 1080w" width="1080" height="1350" loading="lazy" decoding="async" alt="Faire-part de mariage aux motifs floraux" sizes="(min-width: 900px) 40vw, 90vw"></div>
+        <div class="passerelle__texte">
+          <p class="t-eyebrow">Site de mariage et RSVP</p>
+          <h3 class="t-h3">Simplifiez la gestion de vos invités</h3>
+          <p>De la création de votre site de mariage à la gestion complète de vos RSVP. Dès 550&nbsp;$.</p>
+          <a class="lien lien--fleche" href="rsvp.html">Découvrir</a>
+        </div>
+      </article>
+      <article class="passerelle" data-apparait>
+        <div class="media"><img src="assets/img/plan-eden-produits-1918.webp" srcset="assets/img/plan-eden-produits-1000.webp 1000w, assets/img/plan-eden-produits-1918.webp 1918w" width="1918" height="820" loading="lazy" decoding="async" alt="Tablette, téléphone et carnet sur un bureau crème : les outils numériques du Plan Eden" sizes="(min-width: 900px) 40vw, 90vw"></div>
+        <div class="passerelle__texte">
+          <p class="t-eyebrow">Le Plan Eden</p>
+          <h3 class="t-h3">Planifiez votre mariage vous-même. Pas toute seule.</h3>
+          <p>Guide numérique complet + fichier Excel de planification. 47&nbsp;$&nbsp;CAD.</p>
+          <a class="lien lien--fleche" href="le-plan-eden.html">Découvrir</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 08 · FINALE -->
+<section class="chapitre finale finale--duo fond-creme" id="rencontre" data-chapitre="Rencontrons-nous">
+  <div class="enveloppe finale__duo">
+    <div class="media media--arche finale__media" data-devoile><img src="assets/img/arche-lac-2000.webp" srcset="assets/img/arche-lac-1000.webp 1000w, assets/img/arche-lac-2000.webp 2000w" width="5000" height="3333" loading="lazy" decoding="async" alt="Arche fleurie et tables dressées au bord d’un lac" sizes="(min-width: 900px) 38vw, 100vw"></div>
+    <div class="finale__corps">
+    <p class="t-eyebrow" data-apparait>Eden Wedding Services</p>
+    <h2 class="t-h2" data-lignes>Prêts à transformer votre vision en une journée <em>mémorable&nbsp;?</em></h2>
+    <p class="t-lead" data-apparait style="max-width:44ch">Nous avons hâte de vous rencontrer et de discuter de vos rêves pour votre Grand Jour. Dites-nous-en plus sur votre vision, et nous nous occupons du reste.</p>
+    <a class="btn btn--or" href="https://tidycal.com/1ydlyw1/appel-decouverte-eden-wedding-services" target="_blank" rel="noopener" data-apparait>Planifier une consultation gratuite</a>
+    <a class="lien lien--fleche" href="contact.html?type=mariage" data-apparait>Ou écrivez-nous</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="pied">
+  <div class="enveloppe pied__grille">
+    <div class="pied__intro">
+      <p class="t-h3">Orchestré à la perfection.</p>
+      <p>Mariages, gastronomie et événements d’entreprise. Montréal et destinations.</p>
+      <a class="btn btn--or" href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Réserver un appel découverte</a>
+    </div>
+    <nav class="pied__col" aria-label="Pages">
+      <p class="t-eyebrow">Explorer</p>
+      <ul>
+        <li><a href="mariages.html">Mariages</a></li>
+        <li><a href="le-plan-eden.html">Le Plan Eden</a></li>
+        <li><a href="rsvp.html">Site de mariage &amp; RSVP</a></li>
+        <li><a href="gourmet.html">Eden Gourmet</a></li>
+        <li><a href="corporatif.html">Entreprises</a></li>
+        <li><a href="agence.html">L’agence</a></li>
+      </ul>
+    </nav>
+    <div class="pied__col">
+      <p class="t-eyebrow">Réserver</p>
+      <ul>
+        <li><a href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Appel découverte</a></li>
+        <li><a href="https://tidycal.com/1ydlyw1/clarityhour" target="_blank" rel="noopener">La Session Eden</a></li>
+        <li><a href="https://tidycal.com/1ydlyw1/eden-gourmet-brunch-reservation" target="_blank" rel="noopener">Service brunch</a></li>
+        <li><a href="https://www.agenceeden.com/product-page/le-plan-eden-guide-de-planification-de-mariage-pdfexcel" target="_blank" rel="noopener">Acheter Le Plan Eden</a></li>
+      </ul>
+    </div>
+    <div class="pied__col">
+      <p class="t-eyebrow">Écrire</p>
+      <ul>
+        <li><a href="mailto:info@agenceeden.com">info@agenceeden.com</a></li>
+        <li><a href="https://www.instagram.com/edenweddingservices" target="_blank" rel="noopener">@edenweddingservices</a></li>
+        <li><a href="contact.html">Formulaire de contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="enveloppe pied__bas">
+    <p class="pied__signature" aria-hidden="true">Agence Eden</p>
+    <p class="pied__legal">© 2026 Agence Eden · Événements, mariages &amp; gastronomie</p>
+  </div>
+</footer>
+
+<div class="barre-mobile" data-barre-mobile>
+  <button class="barre-mobile__chapitres" type="button" aria-expanded="false" aria-controls="sommaire" data-sommaire-bouton>
+    <svg class="anneau" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15" /><circle class="anneau__progres" cx="18" cy="18" r="15" pathLength="100" /></svg>
+    <span class="barre-mobile__texte"><span data-chapitre-num>01</span><span data-chapitre-nom>Ouverture</span></span>
+  </button>
+  <a class="btn btn--or btn--petit" href="https://tidycal.com/1ydlyw1/appel-decouverte-eden-wedding-services" target="_blank" rel="noopener">Consultation gratuite</a>
+</div>
+<div class="sommaire" id="sommaire" data-sommaire hidden>
+  <p class="t-eyebrow">Sur cette page</p>
+  <ol class="sommaire__liste" data-sommaire-liste></ol>
+  <button class="lien sommaire__haut" type="button" data-haut>Revenir en haut ↑</button>
+</div>
+
+<script src="assets/vendor/gsap.min.js" defer></script>
+<script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/vendor/lenis.min.js" defer></script>
+<script src="assets/js/eden.js" defer></script>
+</body>
+</html>

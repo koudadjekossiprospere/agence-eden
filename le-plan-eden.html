@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Le Plan Eden — Planifiez votre mariage vous-même · Agence Eden</title>
+<meta name="description" content="La méthode d’une organisatrice de mariages, le contrôle entre vos mains : guide numérique complet + fichier Excel de planification. 47 $ CAD, en français et en anglais.">
+<meta name="theme-color" content="#F7F2EB">
+<meta property="og:title" content="Le Plan Eden — Planifiez votre mariage vous-même · Agence Eden">
+<meta property="og:description" content="La méthode d’une organisatrice de mariages, le contrôle entre vos mains : guide numérique complet + fichier Excel de planification. 47 $ CAD, en français et en anglais.">
+<meta property="og:locale" content="fr_CA">
+<link rel="alternate" hreflang="fr" href="https://agenceeden.com/le-plan-eden.html" data-lien="le-plan-eden.html">
+<link rel="alternate" hreflang="en" href="https://agenceeden.com/en/the-eden-plan.html" data-lien="en/the-eden-plan.html">
+<link rel="alternate" hreflang="x-default" href="https://agenceeden.com/le-plan-eden.html">
+<script>
+/* Langue : à l'arrivée sur le site (pas en naviguant d'une page à l'autre), on suit le choix déjà fait par le visiteur,
+   sinon la langue de son navigateur ; une autre langue (ni français ni anglais) garde la page d'arrivée, le français étant la page par défaut (x-default). Les robots des moteurs de recherche ne sont jamais redirigés. */
+(function () {
+  try {
+    var ici = document.documentElement.lang.slice(0, 2);
+    if (document.referrer && document.referrer.indexOf(location.origin) === 0) return;
+    if (/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent) || sessionStorage.getItem('langue-vue')) return;
+    sessionStorage.setItem('langue-vue', '1');
+    var voulue = localStorage.getItem('langue') || ((navigator.languages || [navigator.language]).map(function (l) { return String(l).slice(0, 2).toLowerCase(); }).filter(function (l) { return l === 'fr' || l === 'en'; })[0]);
+    var autre = document.querySelector('link[hreflang="' + voulue + '"]');
+    if (voulue && voulue !== ici && autre) location.replace(autre.getAttribute('data-lien') + location.hash);
+  } catch (e) {}
+})();
+</script>
+<link rel="icon" href="assets/img/monogramme.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/eden.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="page-plan">
+<a class="evitement" href="#contenu">Aller au contenu</a>
+
+<header class="entete" data-entete>
+  <div class="entete__barre">
+    <a class="marque" href="index.html" aria-label="Agence Eden, retour à l'accueil">
+      <span class="marque__nom">Agence Eden</span>
+      <span class="marque__sous">Événements, mariages &amp; gastronomie</span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <ul class="nav__liste">
+        <li class="nav__groupe" data-groupe>
+          <button class="nav__lien" type="button" aria-expanded="false" aria-controls="sous-mariages" data-nav="mariages" aria-current="page">Mariages <svg class="nav__chevron" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
+          <div class="nav__sous" id="sous-mariages">
+            <a href="mariages.html" data-sous><span class="nav__sous-titre">Planification de mariage</span><span class="nav__sous-info">Eden Royal &amp; Eden Prestige · dès 4 999 $</span></a>
+            <a href="le-plan-eden.html" data-sous aria-current="page"><span class="nav__sous-titre">Le Plan Eden</span><span class="nav__sous-info">Guide + fichier Excel · 47 $</span></a>
+            <a href="rsvp.html" data-sous><span class="nav__sous-titre">Site de mariage &amp; RSVP</span><span class="nav__sous-info">Gestion des invités · dès 550 $</span></a>
+          </div>
+        </li>
+        <li><a class="nav__lien" href="gourmet.html" data-nav="gourmet">Eden Gourmet</a></li>
+        <li><a class="nav__lien" href="corporatif.html" data-nav="corporatif">Entreprises</a></li>
+        <li><a class="nav__lien" href="agence.html" data-nav="agence">L’agence</a></li>
+      </ul>
+    </nav>
+    <a class="entete__cta" href="contact.html" data-nav="contact">Nous contacter</a>
+    <p class="langues" role="group" aria-label="Langue du site"><a href="le-plan-eden.html" hreflang="fr" lang="fr" data-langue="fr" aria-label="Français" aria-current="true">FR</a><span aria-hidden="true">|</span><a href="en/the-eden-plan.html" hreflang="en" lang="en" data-langue="en" aria-label="English">EN</a></p>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu" data-burger>
+      <span class="burger__texte">Menu</span><span class="burger__traits" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu" id="menu" data-menu hidden>
+  <nav class="menu__nav" aria-label="Menu">
+    <ol class="menu__liste">
+      <li><a href="index.html" data-nav="accueil"><span>01</span>Accueil</a></li>
+      <li><a href="mariages.html"><span>02</span>Mariages</a></li>
+      <li><a href="le-plan-eden.html"><span>03</span>Le Plan Eden</a></li>
+      <li><a href="rsvp.html"><span>04</span>Site &amp; RSVP</a></li>
+      <li><a href="gourmet.html"><span>05</span>Eden Gourmet</a></li>
+      <li><a href="corporatif.html"><span>06</span>Entreprises</a></li>
+      <li><a href="agence.html"><span>07</span>L’agence</a></li>
+      <li><a href="contact.html"><span>08</span>Contact</a></li>
+    </ol>
+  </nav>
+  <div class="menu__pied">
+    <a class="btn btn--or" href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Réserver un appel découverte</a>
+    <p>Gratuit · 20 minutes · sans obligation</p>
+    <p><a class="lien" href="mailto:info@agenceeden.com">info@agenceeden.com</a> · <a class="lien" href="https://www.instagram.com/edenweddingservices" target="_blank" rel="noopener">Instagram</a></p>
+  </div>
+</div>
+
+<main id="contenu">
+<!-- 01 · OUVERTURE -->
+<section class="entree" id="ouverture" data-chapitre="Le Plan Eden" data-masque-achat>
+  <div class="enveloppe produit__grille">
+    <div class="entree__texte">
+      <ol class="ariane" data-apparait><li><a href="index.html">Accueil</a></li><li><a href="mariages.html">Mariages</a></li><li>Le Plan Eden</li></ol>
+      <p class="t-eyebrow" data-apparait>Le Plan Eden · Guide + fichier Excel</p>
+      <h1 class="t-h1" data-lignes>Planifiez votre mariage vous-même. <em>Pas toute seule.</em></h1>
+      <p class="t-lead" data-apparait>La méthode d’une organisatrice de mariages. Le contrôle reste entre vos mains.</p>
+      <p data-apparait style="max-width:52ch">Vous recevez un guide numérique complet + un fichier Excel de planification pour vous aider à organiser votre budget, vos fournisseurs, vos invités, votre échéancier et votre jour&nbsp;J.</p>
+      <div class="actions" data-apparait>
+        <a class="btn btn--or" href="https://www.agenceeden.com/product-page/le-plan-eden-guide-de-planification-de-mariage-pdfexcel" target="_blank" rel="noopener">Obtenir le Plan Eden · 47 $</a>
+        <a class="lien" href="https://www.agenceeden.com/product-page/the-eden-plan-wedding-planning-guide-pdf-excel" target="_blank" rel="noopener" hreflang="en">Version anglaise</a>
+      </div>
+    </div>
+    <div class="produit__visuel">
+      <div class="media" data-devoile><img src="assets/img/plan-eden-ecrans-1080.webp" srcset="assets/img/plan-eden-ecrans-1000.webp 1000w, assets/img/plan-eden-ecrans-1080.webp 1080w" width="1080" height="1080" decoding="async" alt="Le Plan Eden sur ordinateur et tablette, avec son fichier Excel" sizes="(min-width: 900px) 45vw, 100vw" loading="eager"></div>
+      <p class="etiquette-prix" data-apparait><span><s>77 $</s> <strong>47 $</strong>CAD · paiement unique</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- 02 · PAR OÙ COMMENCER -->
+<section class="chapitre fond-lin" id="commencer" data-chapitre="Par où commencer ?">
+  <div class="enveloppe produit__grille">
+    <div class="media" style="aspect-ratio:1" data-devoile><img src="assets/img/plan-eden-fiancee-1080.webp" srcset="assets/img/plan-eden-fiancee-1000.webp 1000w, assets/img/plan-eden-fiancee-1080.webp 1080w" width="1080" height="1080" loading="lazy" decoding="async" alt="Future mariée, tablette à la main, la tête dans la main devant son guide de planification" sizes="(min-width: 900px) 45vw, 100vw"></div>
+    <div class="prose">
+      <p class="t-eyebrow" data-apparait>Vous êtes fiancés.</p>
+      <h2 class="t-h2" data-lignes>Maintenant… <em>par où commencer&nbsp;?</em></h2>
+      <p data-apparait>Au début, organiser son mariage est excitant. Puis arrivent les décisions. Et soudain, organiser votre mariage commence à ressembler à un deuxième emploi.</p>
+      <ul class="pile" aria-label="Les décisions qui s’accumulent">
+        <li>Le budget</li><li>La salle</li><li>Le traiteur</li><li>Le photographe</li><li>Les invitations</li><li>Les contrats</li><li>Les paiements</li><li>Les fournisseurs</li><li>La décoration</li><li>Le plan de salle</li><li>L’échéancier</li><li>Le déroulement du jour J</li>
+      </ul>
+      <p data-apparait>Vous enregistrez des idées sur Pinterest. Vous regardez des vidéos TikTok. Vous téléchargez une liste de vérification ici, un tableau là…</p>
+    </div>
+  </div>
+</section>
+<section class="chapitre chapitre--ecran fond-creme" id="question" data-chapitre="La question">
+  <div class="enveloppe questions">
+    <p class="t-eyebrow" data-apparait>Mais une question demeure</p>
+    <h2 class="t-h2" data-lignes>Est-ce qu’on fait vraiment les choses <em>dans le bon ordre&nbsp;?</em></h2>
+    <p class="t-h3" data-apparait style="max-width:30ch">Et surtout&nbsp;: est-ce qu’on oublie quelque chose d’important&nbsp;?</p>
+  </div>
+</section>
+
+<!-- 03 · UNE MÉTHODE -->
+<section class="chapitre fond-lin" id="methode" data-chapitre="Une méthode">
+  <div class="enveloppe produit__grille">
+    <div class="prose">
+      <p class="t-eyebrow" data-apparait>Vous n’avez pas besoin de tout inventer vous-même</p>
+      <p class="t-lead" data-apparait>Tout le monde ne peut pas — ou ne souhaite pas — investir plusieurs milliers de dollars dans un service complet de planification de mariage. Mais organiser votre mariage vous-même ne signifie pas que vous devez partir de zéro.</p>
+      <ul class="lignes-pouvoir" data-cascade>
+        <li data-apparait>Vous pouvez avoir une méthode.</li>
+        <li data-apparait>Vous pouvez avoir des outils.</li>
+        <li data-apparait>Vous pouvez savoir quelle est votre prochaine étape.</li>
+        <li data-apparait>Vous pouvez prendre vos décisions avec plus de clarté et de confiance.</li>
+      </ul>
+      <p data-apparait>C’est exactement pour cela que Le Plan Eden a été créé.</p>
+    </div>
+    <div class="media" style="aspect-ratio:1" data-devoile><img src="assets/img/plan-eden-ambiance-1080.webp" srcset="assets/img/plan-eden-ambiance-1000.webp 1000w, assets/img/plan-eden-ambiance-1080.webp 1080w" width="1080" height="1080" loading="lazy" decoding="async" alt="Le Plan Eden ouvert sur un ordinateur portable, tablette et carnet à côté" sizes="(min-width: 900px) 45vw, 100vw"></div>
+  </div>
+</section>
+
+<!-- 04 · VOICI LE PLAN EDEN -->
+<section class="chapitre fond-creme" id="systeme" data-chapitre="Guide + Excel">
+  <div class="enveloppe">
+    <div class="entete-section">
+      <p class="t-eyebrow" data-apparait>Voici Le Plan Eden</p>
+      <h2 class="t-h2" data-lignes>Votre système de planification de mariage <em>à faire soi-même.</em></h2>
+      <p data-apparait style="max-width:62ch">Le Plan Eden rassemble les méthodes, les questions et les outils développés au fil de plus de 6 années d’expérience et plus de 50 mariages planifiés par Eden Wedding Services&nbsp;: les principes que nous utilisons pour accompagner nos couples en planification complète de mariage, réunis dans une méthode que vous pouvez utiliser vous-mêmes.</p>
+      <p class="trio-mots" data-apparait><span>Vous apprenez.</span> <span>Vous appliquez.</span> <span>Vous avancez.</span></p>
+    </div>
+    <div class="duo" data-cascade>
+      <div class="duo__item" data-apparait>
+        <p class="t-eyebrow">Le guide Le Plan Eden</p>
+        <h3 class="t-h3">Pour comprendre quoi faire, pourquoi le faire et dans quel ordre.</h3>
+        <p>Le guide vous explique le «&nbsp;quoi&nbsp;» et le «&nbsp;pourquoi&nbsp;».</p>
+      </div>
+      <p class="duo__plus" aria-hidden="true">+</p>
+      <div class="duo__item" data-apparait>
+        <p class="t-eyebrow">Le fichier Excel Le Plan Eden</p>
+        <h3 class="t-h3">Pour appliquer la méthode directement à votre propre mariage.</h3>
+        <p>Les outils concrets pour passer à l’action&nbsp;: budget, échéancier, fournisseurs et autres suivis.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 · LES 11 CHAPITRES -->
+<section class="chapitre fond-lin defile" id="chapitres" data-chapitre="Ce que vous planifiez" style="padding-block:0">
+  <div style="min-height:100svh;display:grid;align-content:center;padding-block:calc(var(--entete-h) + 24px) 48px">
+    <div class="enveloppe entete-section" style="margin-bottom:clamp(28px,4vw,48px)">
+      <p class="t-eyebrow">Ce que vous allez planifier avec Le Plan Eden</p>
+      <h2 class="t-h2">Onze étapes, <em>dans le bon ordre.</em></h2>
+    </div>
+    <ol class="defile__piste">
+      <li class="defile__carte"><span class="defile__num">01</span><div><h3>Votre vision et vos priorités</h3><p>Avant de commencer à dépenser, identifiez ensemble ce qui compte réellement pour votre mariage.</p></div></li>
+      <li class="defile__carte"><span class="defile__num">02</span><div><h3>Votre budget</h3><p>Construisez un budget réaliste, répartissez vos dépenses et prévoyez une marge pour les imprévus.</p></div></li>
+      <li class="defile__carte"><span class="defile__num">03</span><div><h3>Votre échéancier</h3><p>Sachez quoi faire plusieurs mois avant le mariage, puis à mesure que le jour J approche.</p></div></li>
+      <li class="defile__carte"><span class="defile__num">04</span><div><h3>Vos fournisseurs</h3><p>Apprenez quelles questions poser avant de signer, quoi vérifier dans les contrats et comment repérer certains signaux d’alerte.</p></div></li>
+      <li class="defile__carte"><span class="defile__num">05</span><div><h3>Vos invités</h3><p>Structurez votre liste d’invités, votre suivi RSVP et votre plan de salle.</p></div></li>
+      <li class="defile__carte"><span class="defile__num">06</span><div><h3>Les essentiels légaux et logistiques</h3><p>Anticipez les démarches administratives et les éléments pratiques qui ne doivent surtout pas être oubliés.</p></div></li>
+      <li class="defile__carte"><span class="defile__num">07</span><div><h3>Le stylisme et la décoration</h3><p>Transformez vos inspirations en une vision plus cohérente tout en gardant votre budget en tête.</p></div></li>
+      <li class="defile__carte"><span class="defile__num">08</span><div><h3>L’échéancier de votre journée</h3><p>Construisez un déroulement réaliste du jour J et désignez une personne responsable pour éviter d’avoir à gérer les fournisseurs vous-mêmes pendant votre mariage.</p></div></li>
+      <li class="defile__carte"><span class="defile__num">09</span><div><h3>Le compte à rebours final</h3><p>Préparez les dernières semaines avec une méthode claire.</p></div></li>
+      <li class="defile__carte"><span class="defile__num">10</span><div><h3>Les erreurs à éviter</h3><p>Profitez de situations réelles rencontrées en planification de mariage afin d’éviter certaines erreurs coûteuses ou stressantes.</p></div></li>
+      <li class="defile__carte defile__carte--bonus"><span class="defile__num">11</span><div><h3>Bonus&nbsp;: trousse d’urgence et Plan&nbsp;B</h3><p>Préparez-vous aux imprévus, y compris la pluie, les retards et les petits problèmes du jour J.</p></div></li>
+    </ol>
+    <div class="defile__progres" aria-hidden="true"><span></span></div>
+  </div>
+</section>
+
+<!-- 06 · LE FICHIER EXCEL -->
+<section class="chapitre fond-creme" id="excel" data-chapitre="Le plan d’action">
+  <div class="enveloppe produit__grille">
+    <div class="media" style="aspect-ratio:1067/754" data-devoile><img src="assets/img/plan-eden-systeme-1067.webp" srcset="assets/img/plan-eden-systeme-1000.webp 1000w, assets/img/plan-eden-systeme-1067.webp 1067w" width="1067" height="754" loading="lazy" decoding="async" alt="Aperçu du système Le Plan Eden : guide, fichier Excel et tableaux de suivi" sizes="(min-width: 900px) 45vw, 100vw"></div>
+    <div class="prose">
+      <p class="t-eyebrow" data-apparait>Le fichier Excel</p>
+      <h2 class="t-h2" data-lignes>Le fichier Excel transforme le guide <em>en plan d’action.</em></h2>
+      <p data-apparait>Parce qu’un bon conseil ne sert pas à grand-chose s’il reste seulement dans votre tête. Pendant votre lecture, Le Plan Eden vous renvoie régulièrement vers votre fichier Excel&nbsp;: votre budget, vos priorités, votre échéancier, vos fournisseurs, votre liste d’invités, les aspects légaux, votre stylisme, votre horaire du jour J et votre compte à rebours final.</p>
+      <p class="t-h3 italique" data-apparait>«&nbsp;D’accord… mais maintenant, comment est-ce que je m’organise concrètement&nbsp;?&nbsp;»</p>
+      <p class="t-lead" data-apparait>Le système est déjà là.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 07 · POUR VOUS SI -->
+<section class="chapitre fond-lin" id="pour-vous" data-chapitre="Pour vous si…">
+  <div class="enveloppe">
+    <div class="entete-section">
+      <p class="t-eyebrow" data-apparait>Est-ce pour vous&nbsp;?</p>
+      <h2 class="t-h2" data-lignes>Le Plan Eden est pour vous si…</h2>
+    </div>
+    <ul class="coches">
+      <li><svg class="coche" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10"/><path d="M6.5 11.5l3 3 6-6.5"/></svg>Vous venez de vous fiancer et vous ne savez pas par où commencer.</li>
+      <li><svg class="coche" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10"/><path d="M6.5 11.5l3 3 6-6.5"/></svg>Vous souhaitez organiser votre mariage vous-mêmes.</li>
+      <li><svg class="coche" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10"/><path d="M6.5 11.5l3 3 6-6.5"/></svg>Vous ne souhaitez pas investir dans un accompagnement complet en planification de mariage.</li>
+      <li><svg class="coche" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10"/><path d="M6.5 11.5l3 3 6-6.5"/></svg>Vous avez déjà commencé à planifier, mais vos informations sont dispersées un peu partout.</li>
+      <li><svg class="coche" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10"/><path d="M6.5 11.5l3 3 6-6.5"/></svg>Vous voulez mieux comprendre votre budget.</li>
+      <li><svg class="coche" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10"/><path d="M6.5 11.5l3 3 6-6.5"/></svg>Vous avez peur d’oublier quelque chose d’important.</li>
+      <li><svg class="coche" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10"/><path d="M6.5 11.5l3 3 6-6.5"/></svg>Vous voulez bénéficier d’une méthode professionnelle tout en gardant le contrôle sur vos décisions.</li>
+      <li><svg class="coche" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10"/><path d="M6.5 11.5l3 3 6-6.5"/></svg>Vous avez une vie bien remplie et vous ne voulez pas que votre mariage devienne un deuxième emploi.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 08 · COMMENT ÇA FONCTIONNE -->
+<section class="chapitre fond-creme" id="fonctionnement" data-chapitre="Comment ça fonctionne">
+  <div class="enveloppe">
+    <div class="entete-section">
+      <p class="t-eyebrow" data-apparait>Comment ça fonctionne&nbsp;?</p>
+      <h2 class="t-h2" data-lignes>Trois gestes, <em>à votre rythme.</em></h2>
+    </div>
+    <ol class="etapes" style="--n:3">
+      <li class="etape"><span class="etape__num">1</span><h3>Procurez-vous Le Plan Eden</h3><p>Achetez votre produit numérique directement en ligne.</p></li>
+      <li class="etape"><span class="etape__num">2</span><h3>Suivez le guide étape par étape</h3><p>Avancez selon votre rythme et l’étape où vous êtes rendus dans votre planification.</p></li>
+      <li class="etape"><span class="etape__num">3</span><h3>Utilisez le fichier Excel</h3><p>Transformez les conseils du guide en décisions, suivis et actions concrètes.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 09 · LA CRÉATRICE -->
+<section class="chapitre fond-lin" id="creatrice" data-chapitre="La créatrice">
+  <div class="enveloppe portrait__grille">
+    <div class="media portrait__media" data-devoile><img src="assets/img/mireille-bureau-1080.webp" srcset="assets/img/mireille-bureau-1000.webp 1000w, assets/img/mireille-bureau-1080.webp 1080w" width="1080" height="1080" loading="lazy" decoding="async" alt="Mireille Angéla, fondatrice d’Eden Wedding Services, souriante à son bureau" sizes="(min-width: 900px) 42vw, 100vw"></div>
+    <div class="portrait__texte">
+      <p class="t-eyebrow" data-apparait>Créé par une organisatrice de mariages, pour les couples qui veulent planifier eux-mêmes</p>
+      <h2 class="t-h2" data-lignes>«&nbsp;Je suis Mireille Angéla, <em>fondatrice d’Eden Wedding Services.&nbsp;»</em></h2>
+      <div class="prose" data-apparait>
+        <p>Ma passion pour la planification de mariage a commencé avec mon propre mariage. J’aime organiser, anticiper et structurer, mais même lors de la planification de mon mariage, j’ai expérimenté la différence que peut faire le soutien d’une personne de confiance.</p>
+        <p>C’est aussi pour cela que je comprends parfaitement les futures mariées qui veulent organiser leur mariage elles-mêmes. Ce qui leur manque n’est pas toujours une organisatrice de mariages. C’est parfois simplement <strong>la méthode d’une organisatrice de mariages</strong>.</p>
+        <p class="t-lead">Le Plan Eden a été créé pour mettre cette méthode entre vos mains.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · CE QUE VOUS RECEVEZ -->
+<section class="chapitre fond-creme" id="offre" data-chapitre="Ce que vous recevez" data-masque-achat>
+  <div class="enveloppe">
+    <div class="offre" data-apparait>
+      <div class="offre__visuel"><div class="media"><img src="assets/img/plan-eden-couverture-1080.webp" srcset="assets/img/plan-eden-couverture-640.webp 640w, assets/img/plan-eden-couverture-1080.webp 1080w" width="1414" height="2000" loading="lazy" decoding="async" alt="Couverture du guide Le Plan Eden" sizes="(min-width: 900px) 45vw, 100vw"></div></div>
+      <div class="offre__corps">
+        <p class="t-eyebrow">Ce que vous recevez</p>
+        <h2 class="t-h2">Le Plan Eden</h2>
+        <ul class="offre__liste">
+          <li><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M3 4.5h6.5a2 2 0 0 1 2 2V18a1.6 1.6 0 0 0-1.6-1.6H3zM19 4.5h-6.5a2 2 0 0 0-2 2V18a1.6 1.6 0 0 1 1.6-1.6H19z"/></svg>Guide numérique complet de planification de mariage</li>
+          <li><svg viewBox="0 0 22 22" aria-hidden="true"><rect x="3" y="4" width="16" height="14" rx="1"/><path d="M3 8.5h16M8.5 4v14M13.5 4v14"/></svg>Fichier Excel interactif et outils pratiques</li>
+          <li><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M11 18s-6.5-3.9-6.5-8.4A3.6 3.6 0 0 1 11 7.4a3.6 3.6 0 0 1 6.5 2.2C17.5 14.1 11 18 11 18z"/></svg>Bonus — Préparation intentionnelle du cœur</li>
+          <li><svg viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="7.5"/><path d="M3.5 11h15M11 3.5c2.2 2.3 2.2 12.7 0 15M11 3.5c-2.2 2.3-2.2 12.7 0 15"/></svg>Disponible en français et en anglais</li>
+        </ul>
+        <p class="prix">47 $ <s>77 $</s><small>CAD · paiement unique</small></p>
+        <div class="actions">
+          <a class="btn btn--or" href="https://www.agenceeden.com/product-page/le-plan-eden-guide-de-planification-de-mariage-pdfexcel" target="_blank" rel="noopener">Je veux mon Plan Eden</a>
+          <a class="lien" href="https://www.agenceeden.com/product-page/the-eden-plan-wedding-planning-guide-pdf-excel" target="_blank" rel="noopener" hreflang="en">The Eden Plan (version anglaise)</a>
+        </div>
+        <p class="t-petit">Produit numérique — aucun produit physique ne sera expédié.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 · LA SESSION EDEN -->
+<section class="chapitre fond-lin" id="session" data-chapitre="La Session Eden">
+  <div class="enveloppe session">
+    <div class="prose">
+      <p class="t-eyebrow" data-apparait>Besoin d’un regard professionnel&nbsp;?</p>
+      <h2 class="t-h2" data-lignes>«&nbsp;Qu’est-ce que tu ferais <em>à ma place&nbsp;?&nbsp;»</em></h2>
+      <p data-apparait>Le Plan Eden vous accompagne pour organiser votre mariage vous-mêmes, étape par étape. Mais parfois, même avec un bon plan, on arrive à une décision où l’on aimerait simplement pouvoir s’asseoir avec une professionnelle et lui poser la question.</p>
+      <p data-apparait>Parce qu’organiser votre mariage vous-mêmes ne signifie pas devoir trouver toutes les réponses seuls.</p>
+    </div>
+    <div class="session__carte" data-apparait>
+      <p class="session__titre">La Session Eden</p>
+      <p class="t-lead">Une consultation privée de 60&nbsp;minutes entièrement consacrée à votre mariage.</p>
+      <p>Budget, fournisseurs, échéancier, logistique, stylisme, organisation ou simplement une décision qui vous bloque&nbsp;: vous arrivez avec vos questions et nous travaillons ensemble pour y voir plus clair et déterminer vos prochaines étapes concrètes.</p>
+      <p class="prix">150 $<small>CAD · 60 minutes</small></p>
+      <p class="italique">Votre mariage. Vos questions. Un plan d’action.</p>
+      <div class="actions"><a class="btn btn--encre" href="https://tidycal.com/1ydlyw1/clarityhour" target="_blank" rel="noopener">Réserver ma Session Eden</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 · QUESTIONS -->
+<section class="chapitre fond-creme" id="questions" data-chapitre="Questions fréquentes">
+  <div class="enveloppe">
+    <div class="entete-section">
+      <p class="t-eyebrow" data-apparait>Questions fréquentes</p>
+      <h2 class="t-h2" data-lignes>Vos questions, <em>nos réponses.</em></h2>
+    </div>
+    <div class="faq">
+      <details><summary>Est-ce que Le Plan Eden est seulement un livre numérique&nbsp;?</summary><div class="faq__reponse"><div><p>Non. Votre achat comprend le guide numérique et son fichier Excel de planification, conçus pour être utilisés ensemble.</p></div></div></details>
+      <details><summary>Est-ce que Le Plan Eden remplace une organisatrice de mariages&nbsp;?</summary><div class="faq__reponse"><div><p>Non. Il est destiné aux couples qui veulent organiser leur mariage eux-mêmes tout en bénéficiant d’une méthode structurée et professionnelle.</p></div></div></details>
+      <details><summary>Nous venons juste de nous fiancer. Est-ce trop tôt&nbsp;?</summary><div class="faq__reponse"><div><p>Non. C’est justement un excellent moment pour commencer, puisque Le Plan Eden débute par votre vision, vos priorités, votre nombre approximatif d’invités et votre budget.</p></div></div></details>
+      <details><summary>Notre mariage est déjà en cours de planification. Est-ce trop tard&nbsp;?</summary><div class="faq__reponse"><div><p>Non. Vous pouvez commencer à l’étape où vous êtes rendus et utiliser les sections et outils dont vous avez besoin.</p></div></div></details>
+      <details><summary>Est-ce un produit physique&nbsp;?</summary><div class="faq__reponse"><div><p>Non. Le Plan Eden est un produit numérique.</p></div></div></details>
+      <details><summary>Et si nous avons une situation particulière ou une question à laquelle le guide ne répond pas&nbsp;?</summary><div class="faq__reponse"><div><p>Vous pouvez réserver <a class="lien" href="#session">La Session Eden</a>, une consultation privée de 60 minutes avec une organisatrice de mariages pour travailler spécifiquement sur votre situation.</p></div></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 13 · FINALE -->
+<section class="chapitre chapitre--ecran finale fond-lin" id="commencez" data-chapitre="Commencez" data-masque-achat>
+  <div class="enveloppe finale__corps">
+    <p class="t-eyebrow" data-apparait>Votre mariage. Votre vision. Un plan pour y arriver.</p>
+    <h2 class="t-h1" data-lignes>Vous n’avez pas besoin d’avoir toutes les réponses aujourd’hui. <em>Vous avez simplement besoin de commencer.</em></h2>
+    <p class="finale__note" data-apparait>Guide + fichier Excel de planification · 47 $ CAD</p>
+    <a class="btn btn--or" href="https://www.agenceeden.com/product-page/le-plan-eden-guide-de-planification-de-mariage-pdfexcel" target="_blank" rel="noopener" data-apparait>Je veux mon Plan Eden · 47 $</a>
+  </div>
+</section>
+
+<div class="achat" data-achat>
+  <p>Le Plan Eden · Guide + Excel <strong>47 $</strong></p>
+  <a class="btn btn--or btn--petit" href="https://www.agenceeden.com/product-page/le-plan-eden-guide-de-planification-de-mariage-pdfexcel" target="_blank" rel="noopener">Obtenir</a>
+</div>
+
+</main>
+
+<footer class="pied">
+  <div class="enveloppe pied__grille">
+    <div class="pied__intro">
+      <p class="t-h3">Orchestré à la perfection.</p>
+      <p>Mariages, gastronomie et événements d’entreprise. Montréal et destinations.</p>
+      <a class="btn btn--or" href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Réserver un appel découverte</a>
+    </div>
+    <nav class="pied__col" aria-label="Pages">
+      <p class="t-eyebrow">Explorer</p>
+      <ul>
+        <li><a href="mariages.html">Mariages</a></li>
+        <li><a href="le-plan-eden.html">Le Plan Eden</a></li>
+        <li><a href="rsvp.html">Site de mariage &amp; RSVP</a></li>
+        <li><a href="gourmet.html">Eden Gourmet</a></li>
+        <li><a href="corporatif.html">Entreprises</a></li>
+        <li><a href="agence.html">L’agence</a></li>
+      </ul>
+    </nav>
+    <div class="pied__col">
+      <p class="t-eyebrow">Réserver</p>
+      <ul>
+        <li><a href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Appel découverte</a></li>
+        <li><a href="https://tidycal.com/1ydlyw1/clarityhour" target="_blank" rel="noopener">La Session Eden</a></li>
+        <li><a href="https://tidycal.com/1ydlyw1/eden-gourmet-brunch-reservation" target="_blank" rel="noopener">Service brunch</a></li>
+        <li><a href="https://www.agenceeden.com/product-page/le-plan-eden-guide-de-planification-de-mariage-pdfexcel" target="_blank" rel="noopener">Acheter Le Plan Eden</a></li>
+      </ul>
+    </div>
+    <div class="pied__col">
+      <p class="t-eyebrow">Écrire</p>
+      <ul>
+        <li><a href="mailto:info@agenceeden.com">info@agenceeden.com</a></li>
+        <li><a href="https://www.instagram.com/edenweddingservices" target="_blank" rel="noopener">@edenweddingservices</a></li>
+        <li><a href="contact.html">Formulaire de contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="enveloppe pied__bas">
+    <p class="pied__signature" aria-hidden="true">Agence Eden</p>
+    <p class="pied__legal">© 2026 Agence Eden · Événements, mariages &amp; gastronomie</p>
+  </div>
+</footer>
+
+<div class="barre-mobile" data-barre-mobile>
+  <button class="barre-mobile__chapitres" type="button" aria-expanded="false" aria-controls="sommaire" data-sommaire-bouton>
+    <svg class="anneau" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15" /><circle class="anneau__progres" cx="18" cy="18" r="15" pathLength="100" /></svg>
+    <span class="barre-mobile__texte"><span data-chapitre-num>01</span><span data-chapitre-nom>Ouverture</span></span>
+  </button>
+  <a class="btn btn--or btn--petit" href="https://www.agenceeden.com/product-page/le-plan-eden-guide-de-planification-de-mariage-pdfexcel" target="_blank" rel="noopener">Obtenir · 47 $</a>
+</div>
+<div class="sommaire" id="sommaire" data-sommaire hidden>
+  <p class="t-eyebrow">Sur cette page</p>
+  <ol class="sommaire__liste" data-sommaire-liste></ol>
+  <button class="lien sommaire__haut" type="button" data-haut>Revenir en haut ↑</button>
+</div>
+
+<script src="assets/vendor/gsap.min.js" defer></script>
+<script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/vendor/lenis.min.js" defer></script>
+<script src="assets/js/eden.js" defer></script>
+</body>
+</html>

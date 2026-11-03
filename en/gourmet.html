@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Eden Gourmet — Brunches, Live Crêpes Bar & Catering · Agence Eden</title>
+<meta name="description" content="Crêpes, sweets and live gastronomy for your events: Brunch Signature Eden ($38–48 / person), Live Crêpes Bar ($20–25 / person), corporate packages and add-ons.">
+<meta name="theme-color" content="#F7F2EB">
+<meta property="og:title" content="Eden Gourmet — Brunches, Live Crêpes Bar & Catering · Agence Eden">
+<meta property="og:description" content="Crêpes, sweets and live gastronomy for your events: Brunch Signature Eden ($38–48 / person), Live Crêpes Bar ($20–25 / person), corporate packages and add-ons.">
+<meta property="og:locale" content="en_CA">
+<link rel="alternate" hreflang="fr" href="https://agenceeden.com/gourmet.html" data-lien="../gourmet.html">
+<link rel="alternate" hreflang="en" href="https://agenceeden.com/en/gourmet.html" data-lien="gourmet.html">
+<link rel="alternate" hreflang="x-default" href="https://agenceeden.com/gourmet.html">
+<script>
+/* Langue : à l'arrivée sur le site (pas en naviguant d'une page à l'autre), on suit le choix déjà fait par le visiteur,
+   sinon la langue de son navigateur ; une autre langue (ni français ni anglais) garde la page d'arrivée, le français étant la page par défaut (x-default). Les robots des moteurs de recherche ne sont jamais redirigés. */
+(function () {
+  try {
+    var ici = document.documentElement.lang.slice(0, 2);
+    if (document.referrer && document.referrer.indexOf(location.origin) === 0) return;
+    if (/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent) || sessionStorage.getItem('langue-vue')) return;
+    sessionStorage.setItem('langue-vue', '1');
+    var voulue = localStorage.getItem('langue') || ((navigator.languages || [navigator.language]).map(function (l) { return String(l).slice(0, 2).toLowerCase(); }).filter(function (l) { return l === 'fr' || l === 'en'; })[0]);
+    var autre = document.querySelector('link[hreflang="' + voulue + '"]');
+    if (voulue && voulue !== ici && autre) location.replace(autre.getAttribute('data-lien') + location.hash);
+  } catch (e) {}
+})();
+</script>
+<link rel="icon" href="../assets/img/monogramme.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/fonts.css">
+<link rel="stylesheet" href="../assets/css/eden.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="page-gourmet">
+<a class="evitement" href="#contenu">Skip to content</a>
+
+<header class="entete" data-entete>
+  <div class="entete__barre">
+    <a class="marque" href="index.html" aria-label="Agence Eden, back to home">
+      <span class="marque__nom">Agence Eden</span>
+      <span class="marque__sous">Events, weddings &amp; gastronomy</span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <ul class="nav__liste">
+        <li class="nav__groupe" data-groupe>
+          <button class="nav__lien" type="button" aria-expanded="false" aria-controls="sous-mariages" data-nav="mariages">Weddings <svg class="nav__chevron" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
+          <div class="nav__sous" id="sous-mariages">
+            <a href="weddings.html" data-sous><span class="nav__sous-titre">Wedding planning</span><span class="nav__sous-info">Eden Royal &amp; Eden Prestige · from $4,999</span></a>
+            <a href="the-eden-plan.html" data-sous><span class="nav__sous-titre">The Eden Plan</span><span class="nav__sous-info">Guide + Excel file · $47</span></a>
+            <a href="rsvp.html" data-sous><span class="nav__sous-titre">Wedding website &amp; RSVP</span><span class="nav__sous-info">Guest management · from $550</span></a>
+          </div>
+        </li>
+        <li><a class="nav__lien" href="gourmet.html" data-nav="gourmet" aria-current="page">Eden Gourmet</a></li>
+        <li><a class="nav__lien" href="corporate.html" data-nav="corporatif">Corporate</a></li>
+        <li><a class="nav__lien" href="agency.html" data-nav="agence">The agency</a></li>
+      </ul>
+    </nav>
+    <a class="entete__cta" href="contact.html" data-nav="contact">Contact us</a>
+    <p class="langues" role="group" aria-label="Site language"><a href="../gourmet.html" hreflang="fr" lang="fr" data-langue="fr" aria-label="Français">FR</a><span aria-hidden="true">|</span><a href="gourmet.html" hreflang="en" lang="en" data-langue="en" aria-label="English" aria-current="true">EN</a></p>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu" data-burger>
+      <span class="burger__texte">Menu</span><span class="burger__traits" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu" id="menu" data-menu hidden>
+  <nav class="menu__nav" aria-label="Menu">
+    <ol class="menu__liste">
+      <li><a href="index.html" data-nav="accueil"><span>01</span>Home</a></li>
+      <li><a href="weddings.html"><span>02</span>Weddings</a></li>
+      <li><a href="the-eden-plan.html"><span>03</span>The Eden Plan</a></li>
+      <li><a href="rsvp.html"><span>04</span>Website &amp; RSVP</a></li>
+      <li><a href="gourmet.html"><span>05</span>Eden Gourmet</a></li>
+      <li><a href="corporate.html"><span>06</span>Corporate</a></li>
+      <li><a href="agency.html"><span>07</span>The agency</a></li>
+      <li><a href="contact.html"><span>08</span>Contact</a></li>
+    </ol>
+  </nav>
+  <div class="menu__pied">
+    <a class="btn btn--or" href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Book a discovery call</a>
+    <p>Free · 20 minutes · no obligation</p>
+    <p><a class="lien" href="mailto:info@agenceeden.com">info@agenceeden.com</a> · <a class="lien" href="https://www.instagram.com/edenweddingservices" target="_blank" rel="noopener">Instagram</a></p>
+  </div>
+</div>
+
+<main id="contenu">
+<!-- 01 · OUVERTURE : la promesse et la table, dès le premier écran -->
+<section class="gourmet-ouverture" id="ouverture" data-chapitre="Eden Gourmet">
+  <div class="gourmet-tuiles" aria-hidden="true">
+    <div class="media tuile tuile--1" data-devoile data-parallaxe="-14"><img src="../assets/img/viennoiseries-detail-1080.webp" srcset="../assets/img/viennoiseries-detail-640.webp 640w, ../assets/img/viennoiseries-detail-1080.webp 1080w" width="1792" height="2400" decoding="async" alt="" sizes="(min-width: 900px) 22vw, 45vw" loading="eager"></div>
+    <div class="media tuile tuile--2" data-devoile data-parallaxe="20"><img src="../assets/img/crepe-pliage-1080.webp" srcset="../assets/img/crepe-pliage-640.webp 640w, ../assets/img/crepe-pliage-1080.webp 1080w" width="1792" height="2400" decoding="async" alt="" sizes="(min-width: 900px) 18vw, 45vw" loading="eager"></div>
+    <div class="media tuile tuile--3" data-devoile data-parallaxe="-24"><img src="../assets/img/gourmet-table-2000.webp" srcset="../assets/img/gourmet-table-1000.webp 1000w, ../assets/img/gourmet-table-2000.webp 2000w" width="5707" height="3805" decoding="async" alt="" sizes="(min-width: 900px) 14vw, 45vw" loading="eager"></div>
+    <div class="media tuile tuile--4" data-devoile data-parallaxe="12"><img src="../assets/img/gourmet-viennoiseries-2000.webp" srcset="../assets/img/gourmet-viennoiseries-1000.webp 1000w, ../assets/img/gourmet-viennoiseries-2000.webp 2000w" width="4500" height="3003" decoding="async" alt="" sizes="(min-width: 900px) 22vw, 45vw" loading="eager"></div>
+  </div>
+  <div class="enveloppe gourmet-ouverture__texte">
+    <ol class="ariane" data-apparait><li><a href="index.html">Home</a></li><li>Eden Gourmet</li></ol>
+    <p class="t-eyebrow" data-apparait>Eden Gourmet</p>
+    <h1 class="t-display" data-lignes>Fresh, delicate <em>and irresistible.</em></h1>
+    <p class="t-lead" data-apparait>Crêpes, sweets and live gastronomy for your events: an elegant culinary experience, prepared in front of your guests.</p>
+    <div class="actions" data-apparait>
+      <a class="btn btn--or" href="https://tidycal.com/1ydlyw1/eden-gourmet-brunch-reservation" target="_blank" rel="noopener">Book a brunch service</a>
+      <a class="lien lien--fleche" href="#carte">View the menu</a>
+    </div>
+  </div>
+</section>
+
+<!-- 02 · LA CARTE : tous les menus et leurs prix, d'un coup d'œil -->
+<section class="chapitre fond-lin carte-sommaire" id="carte" data-chapitre="The menu">
+  <div class="enveloppe">
+    <div class="carte-sommaire__tete">
+      <p class="t-eyebrow" data-apparait>The menu</p>
+      <h2 class="t-h2" data-lignes>Our packages, <em>prepared on site.</em></h2>
+    </div>
+    <ol class="carte-index" data-cascade>
+      <li data-apparait><a href="#brunch">
+        <span class="carte-index__num">01</span>
+        <span class="carte-index__nom">Brunch Signature Eden<small>2-hour service · minimum 30 people</small></span>
+        <span class="carte-index__prix">$38–48<small>/ person</small></span>
+      </a></li>
+      <li data-apparait><a href="#crepes">
+        <span class="carte-index__num">02</span>
+        <span class="carte-index__nom">Live Crêpes Bar<small>Sweet &amp; savoury · minimum 40 people</small></span>
+        <span class="carte-index__prix">$20–25<small>/ person</small></span>
+      </a></li>
+      <li data-apparait><a href="#corporatif">
+        <span class="carte-index__num">03</span>
+        <span class="carte-index__nom">Corporate Brunch Packages<small>Diamond · Express · VIP Boardroom</small></span>
+        <span class="carte-index__prix">from $22<small>/ person</small></span>
+      </a></li>
+      <li data-apparait><a href="#options">
+        <span class="carte-index__num">+</span>
+        <span class="carte-index__nom">Add-ons<small>Smoothie bar, mimosa station, coffee cart…</small></span>
+        <span class="carte-index__prix">from $8<small>/ person</small></span>
+      </a></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 03 · LE CONCEPT -->
+<section class="chapitre fond-creme" id="concept" data-chapitre="The concept">
+  <div class="enveloppe">
+    <p class="t-eyebrow" data-apparait style="margin-bottom:28px">The concept</p>
+    <p class="enonce">Eden Gourmet Brunch is where the art of French brunch meets the elegance of events.</p>
+    <div class="enonce-suite">
+      <p class="t-lead" data-apparait>We create culinary stations where flavours, visuals and experience come together to make your event a memorable moment.</p>
+      <p data-apparait style="--i:1">Everything is prepared on site — fresh, delicate and irresistible.</p>
+    </div>
+  </div>
+</section>
+
+<nav class="sous-nav" aria-label="The Eden Gourmet menu">
+  <div class="enveloppe">
+    <ul>
+      <li><a href="#brunch">01 · Brunch Signature</a></li>
+      <li><a href="#crepes">02 · Live Crêpes Bar</a></li>
+      <li><a href="#corporatif">03 · Corporate</a></li>
+      <li><a href="#options">Add-ons</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- 04 · BRUNCH SIGNATURE : double page, la photo tient toute la hauteur -->
+<section class="etal fond-creme" id="brunch" data-chapitre="Brunch Signature">
+  <div class="etal__photo"><img src="../assets/img/brunch-dresse-2000.webp" srcset="../assets/img/brunch-dresse-1000.webp 1000w, ../assets/img/brunch-dresse-2000.webp 2000w" width="2048" height="2048" loading="lazy" decoding="async" alt="Brunch buffet laid out: mini pastries, mini quiches, mini pancakes, fruit parfaits, cheese platter and orange juice" sizes="(min-width: 900px) 50vw, 100vw"></div>
+  <div class="etal__menu">
+    <article class="menu-papier" data-apparait>
+      <p class="menu-papier__num">01</p>
+      <h2>Brunch Signature Eden</h2>
+      <svg class="ornement" viewBox="0 0 120 20" aria-hidden="true"><path d="M0 10h48M72 10h48" stroke="currentColor" stroke-width=".8"/><path d="M60 3l7 7-7 7-7-7z" fill="none" stroke="currentColor" stroke-width=".8"/><circle cx="60" cy="10" r="1.6" fill="currentColor"/></svg>
+      <ul class="plats">
+        <li>Breads, mini pastries</li>
+        <li>Mini crêpes</li>
+        <li>Mini waffles</li>
+        <li>Fresh fruit</li>
+        <li>Fruit parfaits</li>
+        <li>Mini pancake tower</li>
+        <li>Creamy scrambled eggs</li>
+        <li>Sausages / bacon, charcuterie platter</li>
+        <li>Cheese platter</li>
+        <li>Mini quiches</li>
+        <li>Salad bar (2 choices)</li>
+      </ul>
+      <svg class="ornement" viewBox="0 0 120 20" aria-hidden="true"><path d="M0 10h48M72 10h48" stroke="currentColor" stroke-width=".8"/><path d="M60 3l7 7-7 7-7-7z" fill="none" stroke="currentColor" stroke-width=".8"/><circle cx="60" cy="10" r="1.6" fill="currentColor"/></svg>
+      <div class="menu-papier__details">
+        <p><strong>Drinks</strong> · fresh juice + premium coffee</p>
+        <p>Setup + styling + light floral decor</p>
+        <p>2-hour service</p>
+      </div>
+      <div class="menu-papier__prix">
+        <p class="prix">$38–48<small>/ person</small></p>
+        <p class="t-petit">Minimum 30 people</p>
+        <a class="btn btn--encre btn--petit" href="https://tidycal.com/1ydlyw1/eden-gourmet-brunch-reservation" target="_blank" rel="noopener">Book this brunch</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- 05 · LIVE CRÊPES BAR -->
+<section class="etal etal--inverse fond-lin" id="crepes" data-chapitre="Live Crêpes Bar">
+  <div class="etal__photo"><img src="../assets/img/crepes-live-1080.webp" srcset="../assets/img/crepes-live-640.webp 640w, ../assets/img/crepes-live-1080.webp 1080w" width="1792" height="2400" loading="lazy" decoding="async" alt="Chef spreading crêpe batter on the crêpe griddle, with folded crêpes and fresh fruit alongside" sizes="(min-width: 900px) 50vw, 100vw"></div>
+  <div class="etal__menu">
+    <article class="menu-papier" data-apparait>
+      <p class="menu-papier__num">02</p>
+      <h2>Live Crêpes Bar</h2>
+      <p class="italique">Sweet &amp; savoury</p>
+      <svg class="ornement" viewBox="0 0 120 20" aria-hidden="true"><path d="M0 10h48M72 10h48" stroke="currentColor" stroke-width=".8"/><path d="M60 3l7 7-7 7-7-7z" fill="none" stroke="currentColor" stroke-width=".8"/><circle cx="60" cy="10" r="1.6" fill="currentColor"/></svg>
+      <div class="plats-colonnes">
+        <div>
+          <h3>Sweet crêpes</h3>
+          <ul class="plats"><li>Strawberries &amp; whipped cream</li><li>Nutella / banana</li><li>Caramelized apples</li><li>Lemon &amp; sugar</li><li>Salted butter caramel</li></ul>
+        </div>
+        <div>
+          <h3>Savoury crêpes</h3>
+          <ul class="plats"><li>Ham &amp; cheese <span class="t-petit">(option to add mushrooms, asparagus, eggs…)</span></li><li>Burrito</li><li>Smoked salmon, lemon cream</li><li>Veggie pesto</li></ul>
+        </div>
+      </div>
+      <svg class="ornement" viewBox="0 0 120 20" aria-hidden="true"><path d="M0 10h48M72 10h48" stroke="currentColor" stroke-width=".8"/><path d="M60 3l7 7-7 7-7-7z" fill="none" stroke="currentColor" stroke-width=".8"/><circle cx="60" cy="10" r="1.6" fill="currentColor"/></svg>
+      <div class="menu-papier__details">
+        <p><strong>Included</strong> · 1 or 2 live chefs</p>
+        <p>Professional equipment</p>
+        <p>1.5 to 2 hours of service</p>
+        <p>Eden-styled station</p>
+      </div>
+      <div class="menu-papier__prix">
+        <p class="prix">$20–25<small>/ person</small></p>
+        <p class="t-petit">Minimum 40 people</p>
+        <a class="btn btn--encre btn--petit" href="https://tidycal.com/1ydlyw1/eden-gourmet-brunch-reservation" target="_blank" rel="noopener">Book the crêpe bar</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- 06 · CORPORATIF -->
+<section class="chapitre fond-creme" id="corporatif" data-chapitre="Corporate">
+  <div class="enveloppe">
+    <div class="entete-section">
+      <p class="t-eyebrow" data-apparait>03 · Corporate Brunch Packages</p>
+      <h2 class="t-h2" data-lignes>Brunch, <em>corporate style.</em></h2>
+    </div>
+    <div class="formules-pro" data-cascade>
+      <article class="formule-pro" data-apparait>
+        <p class="t-eyebrow">Diamond</p>
+        <h3>Corporate Diamond Brunch</h3>
+        <ul class="inclus"><li>Full brunch station</li><li>Live crêpes</li><li>Smoothie bar</li><li>Premium coffee / tea</li><li>Corporate setup + professional staff</li></ul>
+        <p class="prix">$58–75<small>/ person</small></p>
+      </article>
+      <article class="formule-pro" data-apparait>
+        <p class="t-eyebrow">Express</p>
+        <h3>Corporate Express Brunch</h3>
+        <ul class="inclus"><li>Quick, individually packaged brunch</li><li>Delivery option + minimalist setup</li></ul>
+        <p class="prix">$22–35<small>/ person</small></p>
+      </article>
+      <article class="formule-pro" data-apparait>
+        <p class="t-eyebrow">VIP · 10 to 14 people</p>
+        <h3>Corporate VIP Boardroom Brunch</h3>
+        <ul class="inclus"><li>Prestige brunch platter for 10–14 people</li><li>Mini crêpes, fruit, pastries, breakfast wraps</li><li>Premium service in the boardroom</li></ul>
+        <p class="prix">$320–360<small>/ boardroom</small></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 07 · OPTIONS -->
+<section class="options-fond" id="options" data-chapitre="Add-ons">
+  <div class="options-fond__image" aria-hidden="true"><img src="../assets/img/options-brunch-2000.webp" srcset="../assets/img/options-brunch-1000.webp 1000w, ../assets/img/options-brunch-2000.webp 2000w" width="2752" height="1536" loading="lazy" decoding="async" alt="" sizes="100vw" data-recul></div>
+  <div class="enveloppe">
+    <article class="menu-papier options-papier" data-apparait>
+      <p class="menu-papier__num">Add-ons</p>
+      <h2>To take it <em>a little further.</em></h2>
+      <svg class="ornement" viewBox="0 0 120 20" aria-hidden="true"><path d="M0 10h48M72 10h48" stroke="currentColor" stroke-width=".8"/><path d="M60 3l7 7-7 7-7-7z" fill="none" stroke="currentColor" stroke-width=".8"/><circle cx="60" cy="10" r="1.6" fill="currentColor"/></svg>
+      <ul class="points">
+        <li><span>Smoothie bar</span><span>+$8–15 / person</span></li>
+        <li><span>Mimosa station</span><span>+$12–20 / person</span></li>
+        <li><span>Coffee cart</span><span>+$150 flat</span></li>
+        <li><span>Eden flower styling</span><span>+$95–250</span></li>
+        <li><span>Additional server</span><span>$40 / h</span></li>
+        <li><span>Luxury table &amp; draping</span><span>$85–120</span></li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- 08 · FINALE -->
+<section class="chapitre chapitre--ecran fond-creme" id="reserver" data-chapitre="Book">
+  <div class="enveloppe" style="text-align:center;display:grid;gap:32px;justify-items:center">
+    <p class="t-eyebrow" data-apparait>Your guests</p>
+    <p class="sens" data-cascade><span data-apparait>look,</span> <span data-apparait>smell,</span> <span data-apparait>taste…</span></p>
+    <p class="t-h3" data-apparait>… and leave <em>with a smile.</em></p>
+    <a class="btn btn--or" href="https://tidycal.com/1ydlyw1/eden-gourmet-brunch-reservation" target="_blank" rel="noopener" data-apparait>Book a brunch service</a>
+    <a class="lien lien--fleche" href="contact.html?type=brunch" data-apparait>Or request a quote</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="pied">
+  <div class="enveloppe pied__grille">
+    <div class="pied__intro">
+      <p class="t-h3">Perfectly Orchestrated.</p>
+      <p>Weddings, gastronomy and corporate events. Montreal &amp; destinations.</p>
+      <a class="btn btn--or" href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Book a discovery call</a>
+    </div>
+    <nav class="pied__col" aria-label="Pages">
+      <p class="t-eyebrow">Explore</p>
+      <ul>
+        <li><a href="weddings.html">Weddings</a></li>
+        <li><a href="the-eden-plan.html">The Eden Plan</a></li>
+        <li><a href="rsvp.html">Wedding website &amp; RSVP</a></li>
+        <li><a href="gourmet.html">Eden Gourmet</a></li>
+        <li><a href="corporate.html">Corporate</a></li>
+        <li><a href="agency.html">The agency</a></li>
+      </ul>
+    </nav>
+    <div class="pied__col">
+      <p class="t-eyebrow">Book</p>
+      <ul>
+        <li><a href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Discovery call</a></li>
+        <li><a href="https://tidycal.com/1ydlyw1/clarityhour" target="_blank" rel="noopener">The Eden Session</a></li>
+        <li><a href="https://tidycal.com/1ydlyw1/eden-gourmet-brunch-reservation" target="_blank" rel="noopener">Brunch service</a></li>
+        <li><a href="https://www.agenceeden.com/product-page/the-eden-plan-wedding-planning-guide-pdf-excel" target="_blank" rel="noopener">Buy The Eden Plan</a></li>
+      </ul>
+    </div>
+    <div class="pied__col">
+      <p class="t-eyebrow">Write to us</p>
+      <ul>
+        <li><a href="mailto:info@agenceeden.com">info@agenceeden.com</a></li>
+        <li><a href="https://www.instagram.com/edenweddingservices" target="_blank" rel="noopener">@edenweddingservices</a></li>
+        <li><a href="contact.html">Contact form</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="enveloppe pied__bas">
+    <p class="pied__signature" aria-hidden="true">Agence Eden</p>
+    <p class="pied__legal">© 2026 Agence Eden · Events, weddings &amp; gastronomy</p>
+  </div>
+</footer>
+
+<div class="barre-mobile" data-barre-mobile>
+  <button class="barre-mobile__chapitres" type="button" aria-expanded="false" aria-controls="sommaire" data-sommaire-bouton>
+    <svg class="anneau" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15" /><circle class="anneau__progres" cx="18" cy="18" r="15" pathLength="100" /></svg>
+    <span class="barre-mobile__texte"><span data-chapitre-num>01</span><span data-chapitre-nom>Opening</span></span>
+  </button>
+  <a class="btn btn--or btn--petit" href="https://tidycal.com/1ydlyw1/eden-gourmet-brunch-reservation" target="_blank" rel="noopener">Book a brunch</a>
+</div>
+<div class="sommaire" id="sommaire" data-sommaire hidden>
+  <p class="t-eyebrow">On this page</p>
+  <ol class="sommaire__liste" data-sommaire-liste></ol>
+  <button class="lien sommaire__haut" type="button" data-haut>Back to top ↑</button>
+</div>
+
+<script src="../assets/vendor/gsap.min.js" defer></script>
+<script src="../assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="../assets/vendor/lenis.min.js" defer></script>
+<script src="../assets/js/eden.js" defer></script>
+</body>
+</html>

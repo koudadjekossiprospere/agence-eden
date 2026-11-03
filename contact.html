@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact — Parlez-nous de votre événement · Agence Eden</title>
+<meta name="description" content="Réservez un appel découverte gratuit de 20 minutes ou décrivez votre mariage, votre brunch ou votre événement d’entreprise. Réponse sous 24–48 h. info@agenceeden.com">
+<meta name="theme-color" content="#F7F2EB">
+<meta property="og:title" content="Contact — Parlez-nous de votre événement · Agence Eden">
+<meta property="og:description" content="Réservez un appel découverte gratuit de 20 minutes ou décrivez votre mariage, votre brunch ou votre événement d’entreprise. Réponse sous 24–48 h. info@agenceeden.com">
+<meta property="og:locale" content="fr_CA">
+<link rel="alternate" hreflang="fr" href="https://agenceeden.com/contact.html" data-lien="contact.html">
+<link rel="alternate" hreflang="en" href="https://agenceeden.com/en/contact.html" data-lien="en/contact.html">
+<link rel="alternate" hreflang="x-default" href="https://agenceeden.com/contact.html">
+<script>
+/* Langue : à l'arrivée sur le site (pas en naviguant d'une page à l'autre), on suit le choix déjà fait par le visiteur,
+   sinon la langue de son navigateur ; une autre langue (ni français ni anglais) garde la page d'arrivée, le français étant la page par défaut (x-default). Les robots des moteurs de recherche ne sont jamais redirigés. */
+(function () {
+  try {
+    var ici = document.documentElement.lang.slice(0, 2);
+    if (document.referrer && document.referrer.indexOf(location.origin) === 0) return;
+    if (/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent) || sessionStorage.getItem('langue-vue')) return;
+    sessionStorage.setItem('langue-vue', '1');
+    var voulue = localStorage.getItem('langue') || ((navigator.languages || [navigator.language]).map(function (l) { return String(l).slice(0, 2).toLowerCase(); }).filter(function (l) { return l === 'fr' || l === 'en'; })[0]);
+    var autre = document.querySelector('link[hreflang="' + voulue + '"]');
+    if (voulue && voulue !== ici && autre) location.replace(autre.getAttribute('data-lien') + location.hash);
+  } catch (e) {}
+})();
+</script>
+<link rel="icon" href="assets/img/monogramme.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/eden.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="page-contact">
+<a class="evitement" href="#contenu">Aller au contenu</a>
+
+<header class="entete" data-entete>
+  <div class="entete__barre">
+    <a class="marque" href="index.html" aria-label="Agence Eden, retour à l'accueil">
+      <span class="marque__nom">Agence Eden</span>
+      <span class="marque__sous">Événements, mariages &amp; gastronomie</span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <ul class="nav__liste">
+        <li class="nav__groupe" data-groupe>
+          <button class="nav__lien" type="button" aria-expanded="false" aria-controls="sous-mariages" data-nav="mariages">Mariages <svg class="nav__chevron" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
+          <div class="nav__sous" id="sous-mariages">
+            <a href="mariages.html" data-sous><span class="nav__sous-titre">Planification de mariage</span><span class="nav__sous-info">Eden Royal &amp; Eden Prestige · dès 4 999 $</span></a>
+            <a href="le-plan-eden.html" data-sous><span class="nav__sous-titre">Le Plan Eden</span><span class="nav__sous-info">Guide + fichier Excel · 47 $</span></a>
+            <a href="rsvp.html" data-sous><span class="nav__sous-titre">Site de mariage &amp; RSVP</span><span class="nav__sous-info">Gestion des invités · dès 550 $</span></a>
+          </div>
+        </li>
+        <li><a class="nav__lien" href="gourmet.html" data-nav="gourmet">Eden Gourmet</a></li>
+        <li><a class="nav__lien" href="corporatif.html" data-nav="corporatif">Entreprises</a></li>
+        <li><a class="nav__lien" href="agence.html" data-nav="agence">L’agence</a></li>
+      </ul>
+    </nav>
+    <a class="entete__cta" href="contact.html" data-nav="contact" aria-current="page">Nous contacter</a>
+    <p class="langues" role="group" aria-label="Langue du site"><a href="contact.html" hreflang="fr" lang="fr" data-langue="fr" aria-label="Français" aria-current="true">FR</a><span aria-hidden="true">|</span><a href="en/contact.html" hreflang="en" lang="en" data-langue="en" aria-label="English">EN</a></p>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu" data-burger>
+      <span class="burger__texte">Menu</span><span class="burger__traits" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu" id="menu" data-menu hidden>
+  <nav class="menu__nav" aria-label="Menu">
+    <ol class="menu__liste">
+      <li><a href="index.html" data-nav="accueil"><span>01</span>Accueil</a></li>
+      <li><a href="mariages.html"><span>02</span>Mariages</a></li>
+      <li><a href="le-plan-eden.html"><span>03</span>Le Plan Eden</a></li>
+      <li><a href="rsvp.html"><span>04</span>Site &amp; RSVP</a></li>
+      <li><a href="gourmet.html"><span>05</span>Eden Gourmet</a></li>
+      <li><a href="corporatif.html"><span>06</span>Entreprises</a></li>
+      <li><a href="agence.html"><span>07</span>L’agence</a></li>
+      <li><a href="contact.html"><span>08</span>Contact</a></li>
+    </ol>
+  </nav>
+  <div class="menu__pied">
+    <a class="btn btn--or" href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Réserver un appel découverte</a>
+    <p>Gratuit · 20 minutes · sans obligation</p>
+    <p><a class="lien" href="mailto:info@agenceeden.com">info@agenceeden.com</a> · <a class="lien" href="https://www.instagram.com/edenweddingservices" target="_blank" rel="noopener">Instagram</a></p>
+  </div>
+</div>
+
+<main id="contenu">
+<!-- 01 · OUVERTURE -->
+<section class="entree" id="ouverture" data-chapitre="Contact">
+  <div class="enveloppe">
+    <div class="entree__grille" style="margin-bottom:clamp(40px,6vw,72px)">
+      <div class="entree__texte">
+        <ol class="ariane" data-apparait><li><a href="index.html">Accueil</a></li><li>Contact</li></ol>
+        <p class="t-eyebrow" data-apparait>Contact</p>
+        <h1 class="t-h1" data-lignes>Parlez-nous <em>de votre événement.</em></h1>
+      </div>
+      <div class="entree__cote">
+        <div class="media" style="aspect-ratio:16/10" data-devoile><img src="assets/img/enveloppe-2000.webp" srcset="assets/img/enveloppe-1000.webp 1000w, assets/img/enveloppe-2000.webp 2000w" width="4500" height="2994" decoding="async" alt="Enveloppe et carte crème posées sur un fond clair, brin d’herbe séchée" sizes="(min-width: 900px) 38vw, 100vw" loading="eager"></div>
+        <p class="t-lead" data-apparait>Nous sommes prêtes à vous accompagner avec soin, excellence et sérénité.</p>
+      </div>
+    </div>
+    <div class="chemins" data-cascade>
+      <div class="chemin chemin--principal" data-apparait>
+        <p class="t-eyebrow" style="color:var(--encre)">Le plus simple</p>
+        <p class="chemin__titre"><a href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Réserver un appel découverte</a></p>
+        <p>Gratuit · 20 minutes · sans obligation. Choisissez votre créneau en ligne.</p>
+        <span class="lien-maj">Choisir un créneau →</span>
+      </div>
+      <div class="chemin" data-apparait>
+        <p class="t-eyebrow">Par écrit</p>
+        <p class="chemin__titre"><a href="#formulaire">Décrire votre projet</a></p>
+        <p>Quelques questions, en trois étapes. Nous vous répondons sous 24–48&nbsp;h.</p>
+        <span class="lien-maj">Remplir le formulaire ↓</span>
+      </div>
+    </div>
+    <ul class="liste-fine" style="margin-top:clamp(28px,4vw,48px)" data-apparait>
+      <li><span>La Session Eden · consultation privée de 60 minutes</span><span><a class="lien" href="https://tidycal.com/1ydlyw1/clarityhour" target="_blank" rel="noopener">150 $ · réserver</a></span></li>
+      <li><span>Eden Gourmet · service brunch</span><span><a class="lien" href="https://tidycal.com/1ydlyw1/eden-gourmet-brunch-reservation" target="_blank" rel="noopener">Réserver</a></span></li>
+      <li><span>Courriel</span><span><a class="lien" href="mailto:info@agenceeden.com">info@agenceeden.com</a></span></li>
+      <li><span>Instagram</span><span><a class="lien" href="https://www.instagram.com/edenweddingservices" target="_blank" rel="noopener">@edenweddingservices</a></span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 02 · FORMULAIRE -->
+<section class="chapitre fond-lin" id="formulaire" data-chapitre="Votre projet">
+  <div class="enveloppe formulaire">
+    <div>
+      <p class="t-eyebrow" style="margin-bottom:20px">Dites-nous-en plus sur votre projet</p>
+      <ol class="formulaire__etapes">
+        <li data-repere-etape aria-current="step"><span>01</span>Votre événement</li>
+        <li data-repere-etape><span>02</span>Votre projet</li>
+        <li data-repere-etape><span>03</span>Vos coordonnées</li>
+      </ol>
+    </div>
+    <div>
+      <form data-formulaire novalidate>
+        <fieldset class="etape-form">
+          <legend tabindex="-1">Votre événement</legend>
+          <fieldset class="champ" style="border:0;padding:0;margin:0">
+            <legend class="champ__titre">Type d’évènement <abbr title="requis">*</abbr></legend>
+            <div class="puces">
+              <label><input type="radio" name="type" value="Mariage" data-cle="mariage" data-libelle="Type d’évènement" required><span>Mariage</span></label>
+              <label><input type="radio" name="type" value="Évènement d’entreprise" data-cle="corporatif" data-libelle="Type d’évènement"><span>Évènement d’entreprise</span></label>
+              <label><input type="radio" name="type" value="Brunch privé / traiteur" data-cle="brunch" data-libelle="Type d’évènement"><span>Brunch privé / traiteur</span></label>
+            </div>
+          </fieldset>
+          <div class="champs-2">
+            <div class="champ">
+              <label for="date">Date prévue de l’événement <abbr title="requis">*</abbr></label>
+              <input id="date" name="date" type="date" required data-libelle="Date prévue">
+            </div>
+            <div class="champ">
+              <label for="ville">Ville et pays <abbr title="requis">*</abbr></label>
+              <input id="ville" name="ville" type="text" autocomplete="address-level2" required data-libelle="Ville et pays">
+              <p class="champ__aide">Montréal ou ailleurs : nous organisons aussi à destination.</p>
+            </div>
+          </div>
+          <fieldset class="champ" style="border:0;padding:0;margin:0">
+            <legend class="champ__titre">Nombre estimé d’invités</legend>
+            <div class="puces">
+              <label><input type="radio" name="invites" value="0-50" data-libelle="Invités"><span>0–50</span></label>
+              <label><input type="radio" name="invites" value="50-100" data-libelle="Invités"><span>50–100</span></label>
+              <label><input type="radio" name="invites" value="100-150" data-libelle="Invités"><span>100–150</span></label>
+              <label><input type="radio" name="invites" value="150-200" data-libelle="Invités"><span>150–200</span></label>
+              <label><input type="radio" name="invites" value="200 et plus" data-libelle="Invités"><span>200 et plus</span></label>
+            </div>
+          </fieldset>
+          <div class="formulaire__nav">
+            <span class="t-petit">Étape 1 sur 3</span>
+            <button class="btn btn--encre" type="button" data-suivant-etape>Continuer</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="etape-form" hidden>
+          <legend tabindex="-1">Votre projet</legend>
+          <fieldset class="champ" style="border:0;padding:0;margin:0">
+            <legend class="champ__titre">Budget global estimé</legend>
+            <div class="puces">
+              <label><input type="radio" name="budget" value="Moins de 10 000 $" data-libelle="Budget"><span>Moins de 10 000 $</span></label>
+              <label><input type="radio" name="budget" value="10 000 $ — 25 000 $" data-libelle="Budget"><span>10 000 – 25 000 $</span></label>
+              <label><input type="radio" name="budget" value="25 000 $ — 50 000 $" data-libelle="Budget"><span>25 000 – 50 000 $</span></label>
+              <label><input type="radio" name="budget" value="50 000 $ et plus" data-libelle="Budget"><span>50 000 $ et plus</span></label>
+            </div>
+          </fieldset>
+          <div class="champ">
+            <label for="aide">Comment pouvons-nous vous aider&nbsp;?</label>
+            <textarea id="aide" name="aide" rows="5" data-libelle="Message"></textarea>
+            <p class="champ__aide">Votre vision, ce qui est déjà en place, ce qui vous inquiète…</p>
+          </div>
+          <div class="champ">
+            <label for="source">Comment avez-vous entendu parler d’Agence Eden&nbsp;?</label>
+            <select id="source" name="source" data-libelle="Connu par">
+              <option value="">Choisir…</option>
+              <option>Instagram</option>
+              <option>Facebook</option>
+              <option>Recommandation</option>
+              <option>Google</option>
+              <option>Ancien client d’Eden</option>
+            </select>
+          </div>
+          <div class="formulaire__nav">
+            <button class="lien" type="button" data-precedent-etape>← Retour</button>
+            <button class="btn btn--encre" type="button" data-suivant-etape>Continuer</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="etape-form" hidden>
+          <legend tabindex="-1">Vos coordonnées</legend>
+          <div class="champs-2">
+            <div class="champ">
+              <label for="prenom">Prénom <abbr title="requis">*</abbr></label>
+              <input id="prenom" name="prenom" type="text" autocomplete="given-name" required data-libelle="Prénom">
+            </div>
+            <div class="champ">
+              <label for="nom">Nom <abbr title="requis">*</abbr></label>
+              <input id="nom" name="nom" type="text" autocomplete="family-name" required data-libelle="Nom">
+            </div>
+          </div>
+          <div class="champs-2">
+            <div class="champ">
+              <label for="courriel">Courriel <abbr title="requis">*</abbr></label>
+              <input id="courriel" name="courriel" type="email" autocomplete="email" inputmode="email" required data-libelle="Courriel">
+            </div>
+            <div class="champ">
+              <label for="tel">WhatsApp / téléphone <abbr title="requis">*</abbr></label>
+              <input id="tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" required data-libelle="Téléphone">
+              <p class="champ__aide">Avec l’indicatif si vous êtes hors du Canada.</p>
+            </div>
+          </div>
+          <div class="formulaire__nav">
+            <button class="lien" type="button" data-precedent-etape>← Retour</button>
+            <button class="btn btn--or" type="submit">Envoyer ma demande</button>
+          </div>
+        </fieldset>
+      </form>
+      <div class="merci" data-merci hidden>
+        <p class="t-eyebrow">Demande prête</p>
+        <h2 class="t-h2" tabindex="-1">Merci, nous vous contacterons sous 24–48&nbsp;h.</h2>
+        <p>Votre messagerie s’ouvre avec votre demande déjà rédigée&nbsp;: il ne reste qu’à l’envoyer. Si rien ne s’ouvre, écrivez-nous à <a class="lien" href="mailto:info@agenceeden.com">info@agenceeden.com</a>.</p>
+        <div class="actions"><a class="btn btn--encre" href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Réserver aussi un appel</a><a class="lien lien--fleche" href="index.html">Retour à l’accueil</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="pied">
+  <div class="enveloppe pied__grille">
+    <div class="pied__intro">
+      <p class="t-h3">Orchestré à la perfection.</p>
+      <p>Mariages, gastronomie et événements d’entreprise. Montréal et destinations.</p>
+      <a class="btn btn--or" href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Réserver un appel découverte</a>
+    </div>
+    <nav class="pied__col" aria-label="Pages">
+      <p class="t-eyebrow">Explorer</p>
+      <ul>
+        <li><a href="mariages.html">Mariages</a></li>
+        <li><a href="le-plan-eden.html">Le Plan Eden</a></li>
+        <li><a href="rsvp.html">Site de mariage &amp; RSVP</a></li>
+        <li><a href="gourmet.html">Eden Gourmet</a></li>
+        <li><a href="corporatif.html">Entreprises</a></li>
+        <li><a href="agence.html">L’agence</a></li>
+      </ul>
+    </nav>
+    <div class="pied__col">
+      <p class="t-eyebrow">Réserver</p>
+      <ul>
+        <li><a href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Appel découverte</a></li>
+        <li><a href="https://tidycal.com/1ydlyw1/clarityhour" target="_blank" rel="noopener">La Session Eden</a></li>
+        <li><a href="https://tidycal.com/1ydlyw1/eden-gourmet-brunch-reservation" target="_blank" rel="noopener">Service brunch</a></li>
+        <li><a href="https://www.agenceeden.com/product-page/le-plan-eden-guide-de-planification-de-mariage-pdfexcel" target="_blank" rel="noopener">Acheter Le Plan Eden</a></li>
+      </ul>
+    </div>
+    <div class="pied__col">
+      <p class="t-eyebrow">Écrire</p>
+      <ul>
+        <li><a href="mailto:info@agenceeden.com">info@agenceeden.com</a></li>
+        <li><a href="https://www.instagram.com/edenweddingservices" target="_blank" rel="noopener">@edenweddingservices</a></li>
+        <li><a href="contact.html">Formulaire de contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="enveloppe pied__bas">
+    <p class="pied__signature" aria-hidden="true">Agence Eden</p>
+    <p class="pied__legal">© 2026 Agence Eden · Événements, mariages &amp; gastronomie</p>
+  </div>
+</footer>
+
+<div class="barre-mobile" data-barre-mobile>
+  <button class="barre-mobile__chapitres" type="button" aria-expanded="false" aria-controls="sommaire" data-sommaire-bouton>
+    <svg class="anneau" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15" /><circle class="anneau__progres" cx="18" cy="18" r="15" pathLength="100" /></svg>
+    <span class="barre-mobile__texte"><span data-chapitre-num>01</span><span data-chapitre-nom>Ouverture</span></span>
+  </button>
+  <a class="btn btn--or btn--petit" href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Appel découverte</a>
+</div>
+<div class="sommaire" id="sommaire" data-sommaire hidden>
+  <p class="t-eyebrow">Sur cette page</p>
+  <ol class="sommaire__liste" data-sommaire-liste></ol>
+  <button class="lien sommaire__haut" type="button" data-haut>Revenir en haut ↑</button>
+</div>
+
+<script src="assets/vendor/gsap.min.js" defer></script>
+<script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/vendor/lenis.min.js" defer></script>
+<script src="assets/js/eden.js" defer></script>
+</body>
+</html>

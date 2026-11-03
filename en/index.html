@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Agence Eden — Weddings, Fine Food & Events · Montreal</title>
+<meta name="description" content="Agence Eden creates elegant celebrations, thoughtfully planned down to the smallest detail: wedding planning, Eden Gourmet brunches and corporate events. Montreal & destinations.">
+<meta name="theme-color" content="#F7F2EB">
+<meta property="og:title" content="Agence Eden — Weddings, Fine Food & Events · Montreal">
+<meta property="og:description" content="Agence Eden creates elegant celebrations, thoughtfully planned down to the smallest detail: wedding planning, Eden Gourmet brunches and corporate events. Montreal & destinations.">
+<meta property="og:locale" content="en_CA">
+<link rel="alternate" hreflang="fr" href="https://agenceeden.com/" data-lien="../index.html">
+<link rel="alternate" hreflang="en" href="https://agenceeden.com/en/" data-lien="index.html">
+<link rel="alternate" hreflang="x-default" href="https://agenceeden.com/">
+<script>
+/* Langue : à l'arrivée sur le site (pas en naviguant d'une page à l'autre), on suit le choix déjà fait par le visiteur,
+   sinon la langue de son navigateur ; une autre langue (ni français ni anglais) garde la page d'arrivée, le français étant la page par défaut (x-default). Les robots des moteurs de recherche ne sont jamais redirigés. */
+(function () {
+  try {
+    var ici = document.documentElement.lang.slice(0, 2);
+    if (document.referrer && document.referrer.indexOf(location.origin) === 0) return;
+    if (/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent) || sessionStorage.getItem('langue-vue')) return;
+    sessionStorage.setItem('langue-vue', '1');
+    var voulue = localStorage.getItem('langue') || ((navigator.languages || [navigator.language]).map(function (l) { return String(l).slice(0, 2).toLowerCase(); }).filter(function (l) { return l === 'fr' || l === 'en'; })[0]);
+    var autre = document.querySelector('link[hreflang="' + voulue + '"]');
+    if (voulue && voulue !== ici && autre) location.replace(autre.getAttribute('data-lien') + location.hash);
+  } catch (e) {}
+})();
+</script>
+<link rel="icon" href="../assets/img/monogramme.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/fonts.css">
+<link rel="stylesheet" href="../assets/css/eden.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="page-accueil">
+<a class="evitement" href="#contenu">Skip to content</a>
+
+<header class="entete" data-entete>
+  <div class="entete__barre">
+    <a class="marque" href="index.html" aria-label="Agence Eden, back to home">
+      <span class="marque__nom">Agence Eden</span>
+      <span class="marque__sous">Events, weddings &amp; gastronomy</span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <ul class="nav__liste">
+        <li class="nav__groupe" data-groupe>
+          <button class="nav__lien" type="button" aria-expanded="false" aria-controls="sous-mariages" data-nav="mariages">Weddings <svg class="nav__chevron" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
+          <div class="nav__sous" id="sous-mariages">
+            <a href="weddings.html" data-sous><span class="nav__sous-titre">Wedding planning</span><span class="nav__sous-info">Eden Royal &amp; Eden Prestige · from $4,999</span></a>
+            <a href="the-eden-plan.html" data-sous><span class="nav__sous-titre">The Eden Plan</span><span class="nav__sous-info">Guide + Excel file · $47</span></a>
+            <a href="rsvp.html" data-sous><span class="nav__sous-titre">Wedding website &amp; RSVP</span><span class="nav__sous-info">Guest management · from $550</span></a>
+          </div>
+        </li>
+        <li><a class="nav__lien" href="gourmet.html" data-nav="gourmet">Eden Gourmet</a></li>
+        <li><a class="nav__lien" href="corporate.html" data-nav="corporatif">Corporate</a></li>
+        <li><a class="nav__lien" href="agency.html" data-nav="agence">The agency</a></li>
+      </ul>
+    </nav>
+    <a class="entete__cta" href="contact.html" data-nav="contact">Contact us</a>
+    <p class="langues" role="group" aria-label="Site language"><a href="../index.html" hreflang="fr" lang="fr" data-langue="fr" aria-label="Français">FR</a><span aria-hidden="true">|</span><a href="index.html" hreflang="en" lang="en" data-langue="en" aria-label="English" aria-current="true">EN</a></p>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu" data-burger>
+      <span class="burger__texte">Menu</span><span class="burger__traits" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu" id="menu" data-menu hidden>
+  <nav class="menu__nav" aria-label="Menu">
+    <ol class="menu__liste">
+      <li><a href="index.html" data-nav="accueil" aria-current="page"><span>01</span>Home</a></li>
+      <li><a href="weddings.html"><span>02</span>Weddings</a></li>
+      <li><a href="the-eden-plan.html"><span>03</span>The Eden Plan</a></li>
+      <li><a href="rsvp.html"><span>04</span>Website &amp; RSVP</a></li>
+      <li><a href="gourmet.html"><span>05</span>Eden Gourmet</a></li>
+      <li><a href="corporate.html"><span>06</span>Corporate</a></li>
+      <li><a href="agency.html"><span>07</span>The agency</a></li>
+      <li><a href="contact.html"><span>08</span>Contact</a></li>
+    </ol>
+  </nav>
+  <div class="menu__pied">
+    <a class="btn btn--or" href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Book a discovery call</a>
+    <p>Free · 20 minutes · no obligation</p>
+    <p><a class="lien" href="mailto:info@agenceeden.com">info@agenceeden.com</a> · <a class="lien" href="https://www.instagram.com/edenweddingservices" target="_blank" rel="noopener">Instagram</a></p>
+  </div>
+</div>
+
+<main id="contenu">
+<!-- 01 · OUVERTURE -->
+<section class="ouverture" id="ouverture" data-chapitre="Welcome" data-ouverture>
+  <div class="enveloppe ouverture__grille">
+    <div class="ouverture__texte">
+      <p class="t-eyebrow" data-apparait>Agence Eden · Montreal &amp; destinations</p>
+      <h1 class="t-h1" data-lignes>Elegant celebrations, <em>designed down to the smallest detail.</em></h1>
+      <p class="t-lead" data-apparait style="--i:3">Whether it’s a lavish wedding, a gourmet brunch or a corporate event, we transform your vision into an unforgettable experience.</p>
+      <div class="actions" data-apparait style="--i:4">
+        <a class="btn btn--or" href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Request a consultation</a>
+        <a class="lien lien--fleche" href="#formule">Find my package</a>
+      </div>
+    </div>
+    <div class="ouverture__media">
+      <div class="media media--arche ouverture__cadre diaporama" data-devoile data-diaporama role="region" aria-roledescription="carousel" aria-label="Our events in pictures">
+        <ul class="diaporama__images">
+          <li class="diaporama__image est-actif" role="group" aria-roledescription="slide" aria-label="1 of 6"><img src="../assets/img/couple-jardin-1080.webp" srcset="../assets/img/couple-jardin-640.webp 640w, ../assets/img/couple-jardin-1080.webp 1080w" width="1080" height="1920" decoding="async" alt="The bride resting her head on the groom’s shoulder, outdoors" sizes="(min-width: 900px) 40vw, 92vw" loading="eager" fetchpriority="high"></li>
+          <li class="diaporama__image" role="group" aria-roledescription="slide" aria-label="2 of 6"><img src="../assets/img/accueil-entreprise-1080.webp" srcset="../assets/img/accueil-entreprise-640.webp 640w, ../assets/img/accueil-entreprise-1080.webp 1080w" width="2494" height="3885" loading="lazy" decoding="async" alt="Guests at a corporate event gathered around a buffet" sizes="(min-width: 900px) 40vw, 92vw"></li>
+          <li class="diaporama__image" role="group" aria-roledescription="slide" aria-label="3 of 6"><img src="../assets/img/marches-colonnes-1080.webp" srcset="../assets/img/marches-colonnes-640.webp 640w, ../assets/img/marches-colonnes-1080.webp 1080w" width="2268" height="4032" loading="lazy" decoding="async" alt="Bride and groom embracing on the steps of a columned building" sizes="(min-width: 900px) 40vw, 92vw"></li>
+          <li class="diaporama__image" role="group" aria-roledescription="slide" aria-label="4 of 6"><img src="../assets/img/couple-rires-1080.webp" srcset="../assets/img/couple-rires-640.webp 640w, ../assets/img/couple-rires-1080.webp 1080w" width="1080" height="1920" loading="lazy" decoding="async" alt="Bride and groom laughing hand in hand, the bride wearing a tiara" sizes="(min-width: 900px) 40vw, 92vw"></li>
+          <li class="diaporama__image" role="group" aria-roledescription="slide" aria-label="5 of 6"><img src="../assets/img/kiosque-ceremonie-1080.webp" srcset="../assets/img/kiosque-ceremonie-640.webp 640w, ../assets/img/kiosque-ceremonie-1080.webp 1080w" width="1080" height="1920" loading="lazy" decoding="async" alt="Gazebo and white aisle set for the ceremony" sizes="(min-width: 900px) 40vw, 92vw"></li>
+          <li class="diaporama__image" role="group" aria-roledescription="slide" aria-label="6 of 6"><img src="../assets/img/couple-baiser-or-1080.webp" srcset="../assets/img/couple-baiser-or-640.webp 640w, ../assets/img/couple-baiser-or-1080.webp 1080w" width="1080" height="1920" loading="lazy" decoding="async" alt="The couple kissing, the groom in an embroidered jacket" sizes="(min-width: 900px) 40vw, 92vw"></li>
+        </ul>
+        <div class="diaporama__commandes">
+          <p class="diaporama__compte"><span data-diaporama-num>01</span><span class="diaporama__barre" aria-hidden="true"><i></i></span><span>06</span></p>
+          <button class="diaporama__bouton" type="button" data-pause aria-label="Pause the slideshow"><svg viewBox="0 0 16 16" aria-hidden="true"><path class="diaporama__pause" d="M5.5 3.5v9M10.5 3.5v9"/><path class="diaporama__lecture" d="M5 3.2v9.6L12.6 8z"/></svg></button>
+        </div>
+        <button class="diaporama__bouton diaporama__fleche diaporama__fleche--prec" type="button" data-prec aria-label="Previous image"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5"/></svg></button>
+        <button class="diaporama__bouton diaporama__fleche diaporama__fleche--suiv" type="button" data-suiv aria-label="Next image"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3 5 5-5 5"/></svg></button>
+      </div>
+    </div>
+    <div class="ouverture__pied" data-apparait style="--i:5">
+      <nav class="ouverture__univers" aria-label="Our worlds">
+        <a href="weddings.html"><span>01</span>Weddings</a>
+        <a href="gourmet.html"><span>02</span>Eden Gourmet</a>
+        <a href="corporate.html"><span>03</span>Corporate events</a>
+      </nav>
+      <span class="indice-defile" aria-hidden="true">Scroll</span>
+    </div>
+  </div>
+</section>
+
+<!-- 02 · LA PROMESSE : le chaos se range -->
+<section class="chaos" id="promesse" data-chapitre="The promise" data-chaos>
+  <div class="chaos__scene">
+    <div class="enveloppe chaos__grille">
+      <div class="chaos__texte">
+        <p class="t-eyebrow">The Eden promise</p>
+        <h2 class="t-h2">With us, luxury is measured in calm, <em>not chaos.</em></h2>
+        <p class="t-lead">At Agence Eden, every detail matters. We work with passion, excellence and a keen sense of service.</p>
+      </div>
+      <div>
+        <ol class="chaos__liste">
+          <li>The budget</li>
+          <li>The venue</li>
+          <li>The caterer</li>
+          <li>The photographer</li>
+          <li>The invitations</li>
+          <li>The contracts</li>
+          <li>The payments</li>
+          <li>The vendors</li>
+          <li>The decor</li>
+          <li>The seating plan</li>
+          <li>The timeline</li>
+          <li>The big day</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 · POURQUOI EDEN : cinq volets qui s'ouvrent au défilement -->
+<section class="volets-section fond-creme" id="pourquoi" data-chapitre="Why Eden" data-volets>
+  <div class="volets__scene">
+    <div class="enveloppe">
+      <div class="volets__tete">
+        <div>
+          <p class="t-eyebrow" data-apparait>Our commitments</p>
+          <h2 class="t-h2" data-lignes>Why choose <em>Eden?</em></h2>
+        </div>
+        <p class="volets__compte" aria-hidden="true"><span data-volet-num>01</span> / 05</p>
+      </div>
+      <ol class="volets">
+        <li class="volet est-actif" tabindex="0">
+          <img src="../assets/img/mariee-assise-1080.webp" srcset="../assets/img/mariee-assise-640.webp 640w, ../assets/img/mariee-assise-1080.webp 1080w" width="1080" height="1920" loading="lazy" decoding="async" alt="Bride seated by a large bay window, her train spread out" sizes="(min-width: 900px) 60vw, 80vw">
+          <span class="volet__vertical" aria-hidden="true">Serenity</span>
+          <div class="volet__texte"><span class="volet__num">01</span><h3 class="volet__titre">Serenity</h3><p class="volet__sous">Peace of mind.</p></div>
+        </li>
+        <li class="volet" tabindex="0">
+          <img src="../assets/img/centre-table-or-1080.webp" srcset="../assets/img/centre-table-or-640.webp 640w, ../assets/img/centre-table-or-1080.webp 1080w" width="2800" height="3333" loading="lazy" decoding="async" alt="Centrepiece of pale roses in a gilded bowl" sizes="(min-width: 900px) 60vw, 80vw">
+          <span class="volet__vertical" aria-hidden="true">Reliable vendors</span>
+          <div class="volet__texte"><span class="volet__num">02</span><h3 class="volet__titre">Reliable vendors</h3></div>
+        </li>
+        <li class="volet" tabindex="0">
+          <img src="../assets/img/details-carnet-1080.webp" srcset="../assets/img/details-carnet-640.webp 640w, ../assets/img/details-carnet-1080.webp 1080w" width="1080" height="1350" loading="lazy" decoding="async" alt="Planning notebook and flowers on Eden’s desk" sizes="(min-width: 900px) 60vw, 80vw">
+          <span class="volet__vertical" aria-hidden="true">Expertly managed planning</span>
+          <div class="volet__texte"><span class="volet__num">03</span><h3 class="volet__titre">Expertly managed planning</h3></div>
+        </li>
+        <li class="volet" tabindex="0">
+          <img src="../assets/img/arche-drapee-1080.webp" srcset="../assets/img/arche-drapee-640.webp 640w, ../assets/img/arche-drapee-1080.webp 1080w" width="3128" height="4016" loading="lazy" decoding="async" alt="Ceremony arch draped in ivory and adorned with a bouquet of roses" sizes="(min-width: 900px) 60vw, 80vw">
+          <span class="volet__vertical" aria-hidden="true">Stress-free elegance</span>
+          <div class="volet__texte"><span class="volet__num">04</span><h3 class="volet__titre">Stress-free elegance</h3></div>
+        </li>
+        <li class="volet" tabindex="0">
+          <img src="../assets/img/couple-tendresse-1080.webp" srcset="../assets/img/couple-tendresse-640.webp 640w, ../assets/img/couple-tendresse-1080.webp 1080w" width="1080" height="1920" loading="lazy" decoding="async" alt="Newlyweds embracing, the bride caressing her husband’s face" sizes="(min-width: 900px) 60vw, 80vw">
+          <span class="volet__vertical" aria-hidden="true">A human touch</span>
+          <div class="volet__texte"><span class="volet__num">05</span><h3 class="volet__titre">A human touch, warm &amp; discreet</h3></div>
+        </li>
+      </ol>
+      <div class="aide-choix volets__pied" data-apparait>
+        <p class="t-h3">Ready to create an unforgettable moment?</p>
+        <a class="btn btn--encre" href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Discovery call · free · 20 min</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 · NOS UNIVERS -->
+<section class="univers" id="univers" data-chapitre="Our worlds">
+  <div class="enveloppe univers__intro">
+    <div class="entete-section" style="margin-bottom:0">
+      <p class="t-eyebrow" data-apparait>What we do</p>
+      <h2 class="t-h2" data-lignes>Three worlds, <em>the same attention to detail.</em></h2>
+    </div>
+  </div>
+  <div class="univers__pile">
+    <article class="panneau panneau--plein">
+      <div class="panneau__fond"><img src="../assets/img/lieu-lac-2000.webp" srcset="../assets/img/lieu-lac-1000.webp 1000w, ../assets/img/lieu-lac-2000.webp 2000w" width="4500" height="3000" loading="lazy" decoding="async" alt="Waterside ceremony: white chairs and pampas grass arrangements" sizes="100vw"></div>
+      <div class="enveloppe panneau__calque">
+        <div class="panneau__carte">
+          <p class="panneau__index">01 / 03</p>
+          <h3 class="t-h2">Eden Wedding Services</h3>
+          <p class="t-lead">Wedding planning &amp; coordination.</p>
+          <div class="panneau__sous">
+            <a href="weddings.html"><span>Full or partial planning</span><span>from $4,999</span></a>
+            <a href="the-eden-plan.html"><span>The Eden Plan, to plan it yourselves</span><span>$47</span></a>
+            <a href="rsvp.html"><span>Wedding website &amp; RSVP</span><span>from $550</span></a>
+          </div>
+          <a class="lien lien--fleche lien-maj" href="weddings.html">Discover our weddings</a>
+        </div>
+      </div>
+    </article>
+    <article class="panneau panneau--plein">
+      <div class="panneau__fond"><img src="../assets/img/gourmet-plateau-2000.webp" srcset="../assets/img/gourmet-plateau-1000.webp 1000w, ../assets/img/gourmet-plateau-2000.webp 2000w" width="6016" height="4016" loading="lazy" decoding="async" alt="Platters of figs, grapes and cheeses set on a white tablecloth" sizes="100vw"></div>
+      <div class="enveloppe panneau__calque">
+        <div class="panneau__carte">
+          <p class="panneau__index">02 / 03</p>
+          <h3 class="t-h2">Eden Gourmet</h3>
+          <p class="t-lead">Elegant brunches &amp; custom catering.</p>
+          <div class="panneau__sous">
+            <a href="gourmet.html#brunch"><span>Brunch Signature Eden</span><span>$38–48 / person</span></a>
+            <a href="gourmet.html#crepes"><span>Live Crêpes Bar</span><span>$20–25 / person</span></a>
+            <a href="gourmet.html#corporatif"><span>Corporate packages</span><span>from $22 / person</span></a>
+          </div>
+          <a class="lien lien--fleche lien-maj" href="gourmet.html">Discover Eden Gourmet</a>
+        </div>
+      </div>
+    </article>
+    <article class="panneau panneau--plein">
+      <div class="panneau__fond"><img src="../assets/img/gala-entreprise-2000.webp" srcset="../assets/img/gala-entreprise-1000.webp 1000w, ../assets/img/gala-entreprise-2000.webp 2000w" width="2752" height="1536" loading="lazy" decoding="async" alt="Gala room set up with round tables, crystal chandeliers and a small draped stage" sizes="100vw"></div>
+      <div class="enveloppe panneau__calque">
+        <div class="panneau__carte">
+          <p class="panneau__index">03 / 03</p>
+          <h3 class="t-h2">Eden Corporate Events</h3>
+          <p class="t-lead">Galas, grand openings, conferences &amp; corporate evenings.</p>
+          <div class="panneau__sous">
+            <a href="corporate.html"><span>Corporate events</span><span>contact us</span></a>
+            <a href="corporate.html#brunchs"><span>Corporate brunches</span><span>from $22 / person</span></a>
+          </div>
+          <a class="lien lien--fleche lien-maj" href="corporate.html">Discover our corporate events</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- 05 · TROUVER SA FORMULE -->
+<section class="chapitre fond-lin" id="formule" data-chapitre="Your package">
+  <div class="enveloppe">
+    <div class="entete-section">
+      <p class="t-eyebrow" data-apparait>Find my package</p>
+      <h2 class="t-h2" data-lignes>Tell us where you are, <em>we’ll show you the way.</em></h2>
+    </div>
+    <div class="formule__grille" data-onglets>
+      <div class="formule__choix" role="tablist" aria-label="Your needs" aria-orientation="vertical">
+        <button class="formule__onglet" role="tab" id="o-royal" aria-controls="p-royal" aria-selected="true"><span>01</span>Hand it all over, from start to finish</button>
+        <button class="formule__onglet" role="tab" id="o-prestige" aria-controls="p-prestige" aria-selected="false" tabindex="-1"><span>02</span>I’ve started and want a guide</button>
+        <button class="formule__onglet" role="tab" id="o-plan" aria-controls="p-plan" aria-selected="false" tabindex="-1"><span>03</span>Plan my wedding myself</button>
+        <button class="formule__onglet" role="tab" id="o-rsvp" aria-controls="p-rsvp" aria-selected="false" tabindex="-1"><span>04</span>Simplify guest management</button>
+        <button class="formule__onglet" role="tab" id="o-gourmet" aria-controls="p-gourmet" aria-selected="false" tabindex="-1"><span>05</span>Host a brunch</button>
+        <button class="formule__onglet" role="tab" id="o-pro" aria-controls="p-pro" aria-selected="false" tabindex="-1"><span>06</span>Organize a corporate event</button>
+      </div>
+      <div class="formule__panneaux">
+        <div class="formule__panneau" role="tabpanel" id="p-royal" aria-labelledby="o-royal">
+          <div class="formule__corps">
+            <p class="t-eyebrow">Eden Royal · Full planning</p>
+            <p class="t-h3">For couples who want complete peace of mind, from start to finish.</p>
+            <p class="prix"><small>Starting at</small>$5,999</p>
+            <p>Ideal if you have a big project and little time.</p>
+            <div class="actions"><a class="lien lien--fleche" href="weddings.html#formules">View the package</a></div>
+          </div>
+        </div>
+        <div class="formule__panneau" role="tabpanel" id="p-prestige" aria-labelledby="o-prestige" hidden>
+          <div class="formule__corps">
+            <p class="t-eyebrow">Eden Prestige · Partial planning</p>
+            <p class="t-h3">For couples who want expert support with certain aspects.</p>
+            <p class="prix"><small>Starting at</small>$4,999</p>
+            <p>Ideal if you’ve already started but are feeling overwhelmed and want professional guidance.</p>
+            <div class="actions"><a class="lien lien--fleche" href="weddings.html#formules">View the package</a></div>
+          </div>
+        </div>
+        <div class="formule__panneau" role="tabpanel" id="p-plan" aria-labelledby="o-plan" hidden>
+          <div class="formule__corps">
+            <p class="t-eyebrow">The Eden Plan · Guide + Excel file</p>
+            <p class="t-h3">Plan your wedding yourself. Just not alone.</p>
+            <p class="prix">$47 <s>$77</s><small>CAD · one-time payment</small></p>
+            <p>Need a professional eye? The Eden Session: 60&nbsp;minutes, $150&nbsp;CAD.</p>
+            <div class="actions"><a class="lien lien--fleche" href="the-eden-plan.html">Discover The Eden Plan</a></div>
+          </div>
+        </div>
+        <div class="formule__panneau" role="tabpanel" id="p-rsvp" aria-labelledby="o-rsvp" hidden>
+          <div class="formule__corps">
+            <p class="t-eyebrow">Wedding website &amp; RSVP</p>
+            <p class="t-h3">From creating your wedding website to fully managing your RSVPs.</p>
+            <ul class="liste-fine">
+              <li><span>Essential</span><span>$550</span></li>
+              <li><span>Signature</span><span>$850</span></li>
+              <li><span>Experience</span><span>$1,400+</span></li>
+            </ul>
+            <div class="actions"><a class="lien lien--fleche" href="rsvp.html">Compare packages</a></div>
+          </div>
+        </div>
+        <div class="formule__panneau" role="tabpanel" id="p-gourmet" aria-labelledby="o-gourmet" hidden>
+          <div class="formule__corps">
+            <p class="t-eyebrow">Eden Gourmet</p>
+            <p class="t-h3">An elegant culinary experience, prepared in front of your guests.</p>
+            <ul class="liste-fine">
+              <li><span>Brunch Signature Eden · min. 30 guests</span><span>$38–48 / person</span></li>
+              <li><span>Live Crêpes Bar · min. 40 guests</span><span>$20–25 / person</span></li>
+            </ul>
+            <div class="actions"><a class="lien lien--fleche" href="gourmet.html">View the menu</a></div>
+          </div>
+        </div>
+        <div class="formule__panneau" role="tabpanel" id="p-pro" aria-labelledby="o-pro" hidden>
+          <div class="formule__corps">
+            <p class="t-eyebrow">Eden Corporate Events</p>
+            <p class="t-h3">Galas, grand openings, conferences &amp; corporate evenings.</p>
+            <ul class="liste-fine">
+              <li><span>Corporate Express Brunch</span><span>$22–35 / person</span></li>
+              <li><span>Corporate Diamond Brunch</span><span>$58–75 / person</span></li>
+              <li><span>VIP Boardroom Brunch</span><span>$320–360 / room</span></li>
+            </ul>
+            <div class="actions"><a class="lien lien--fleche" href="corporate.html">Discover our corporate events</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 · TÉMOIGNAGES -->
+<section class="chapitre fond-creme" id="temoignages" data-chapitre="Testimonials">
+  <div class="enveloppe" data-temoins>
+    <div class="entete-section">
+      <p class="t-eyebrow" data-apparait>They trusted us with their big day</p>
+      <h2 class="t-h2" data-lignes>In our couples’ words</h2>
+    </div>
+    <div class="temoins__scene">
+      <div class="temoins__photos" data-devoile>
+        <div class="media est-actif"><img src="../assets/img/temoignage-melanie-thomas-1080.webp" srcset="../assets/img/temoignage-melanie-thomas-640.webp 640w, ../assets/img/temoignage-melanie-thomas-1080.webp 1080w" width="1080" height="1350" loading="lazy" decoding="async" alt="Mélanie and Thomas kissing, bouquet in hand" sizes="(min-width: 900px) 34vw, 90vw"></div>
+        <div class="media"><img src="../assets/img/temoignage-theo-amandine-786.webp" srcset="../assets/img/temoignage-theo-amandine-640.webp 640w, ../assets/img/temoignage-theo-amandine-786.webp 786w" width="786" height="983" loading="lazy" decoding="async" alt="Théo and Amandine embracing" sizes="(min-width: 900px) 34vw, 90vw"></div>
+        <div class="media"><img src="../assets/img/temoignage-arsene-deborah-1080.webp" srcset="../assets/img/temoignage-arsene-deborah-640.webp 640w, ../assets/img/temoignage-arsene-deborah-1080.webp 1080w" width="1080" height="1350" loading="lazy" decoding="async" alt="Arsène and Deborah smiling in a garden" sizes="(min-width: 900px) 34vw, 90vw"></div>
+      </div>
+      <div>
+        <div class="temoins__citations">
+          <figure class="temoin est-actif">
+            <blockquote><p>“Every detail was planned and thought through, and everything lived up to our expectations! The whole Eden team was part of our moment and will forever be part of our story! Thank you, Mireille, for all your support since day one!”</p></blockquote>
+            <figcaption>Mélanie &amp; Thomas</figcaption>
+          </figure>
+          <figure class="temoin" aria-hidden="true">
+            <blockquote><p>“Eden Wedding Services was there for us, attentive and listening to all our expectations, always ready to advise, reassure and guide us at every step. Honestly, Eden Wedding Services handled everything from start to finish with rare professionalism and gentleness.”</p></blockquote>
+            <figcaption>Théo &amp; Amandine</figcaption>
+          </figure>
+          <figure class="temoin" aria-hidden="true">
+            <blockquote><p>“A huge thank you to Eden Services for making our wedding day an absolutely perfect moment! We were guided and supported at every stage of the planning, which was a real relief.”</p></blockquote>
+            <figcaption>Arsène &amp; Deborah</figcaption>
+          </figure>
+        </div>
+        <div class="temoins__controle">
+          <button type="button" data-precedent aria-label="Previous testimonial"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3L5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></button>
+          <button type="button" data-suivant aria-label="Next testimonial"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></button>
+          <span class="temoins__compte" aria-live="polite">01 / 03</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 · LA FONDATRICE : portrait sous passe-partout, plaque nominative, la citation en grand -->
+<section class="chapitre fond-lin lettre" id="fondatrice" data-chapitre="The founder">
+  <div class="enveloppe lettre__grille">
+    <figure class="lettre__photo">
+      <div class="media lettre__cadre" data-devoile>
+        <div class="lettre__parallaxe" data-parallaxe="5"><img src="../assets/img/mireille-salon-1080.webp" srcset="../assets/img/mireille-salon-1000.webp 1000w, ../assets/img/mireille-salon-1080.webp 1080w" width="1080" height="1080" loading="lazy" decoding="async" alt="Mireille Angéla, founder of Eden Wedding Services, at her computer" sizes="(min-width: 900px) 44vw, 100vw"></div>
+      </div>
+      <figcaption class="lettre__plaque" data-apparait>
+        <span class="t-eyebrow">The founder</span>
+        <h2 class="lettre__nom">Mireille <em>Angéla</em></h2>
+        <span class="lettre__role">Founder of Eden Wedding Services</span>
+      </figcaption>
+    </figure>
+    <div class="lettre__texte">
+      <span class="lettre__guillemet" aria-hidden="true">“</span>
+      <blockquote class="lettre__citation"><p data-lignes>My passion for wedding planning began with <em>my own wedding.”</em></p></blockquote>
+      <p class="lettre__corps" data-apparait>I love organizing, anticipating and structuring, but even while planning my own wedding, I experienced the difference that the support of someone you trust can make.</p>
+      <ul class="lettre__chiffres" data-cascade>
+        <li data-apparait><span class="lettre__pre">Over</span> <strong data-compte>6</strong> <span class="lettre__quoi">years of experience</span></li>
+        <li data-apparait><span class="lettre__pre">Over</span> <strong data-compte>50</strong> <span class="lettre__quoi">weddings planned</span></li>
+      </ul>
+      <div class="actions" data-apparait>
+        <a class="btn btn--or" href="agency.html">Discover the agency</a>
+        <a class="lien lien--fleche" href="agency.html#portfolio">View the portfolio</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 · FINALE -->
+<section class="finale finale--bande fond-creme" id="rencontre" data-chapitre="Let’s meet">
+  <div class="bande" aria-hidden="true"><img src="../assets/img/allee-chaises-2000.webp" srcset="../assets/img/allee-chaises-1000.webp 1000w, ../assets/img/allee-chaises-2000.webp 2000w" width="5969" height="2510" loading="lazy" decoding="async" alt="" sizes="100vw" data-parallaxe="7"></div>
+  <div class="enveloppe finale__corps finale__carte">
+    <p class="t-eyebrow" data-apparait>The Eden promise</p>
+    <h2 class="t-display" data-lignes>Ready to create an <em>unforgettable moment?</em></h2>
+    <a class="btn btn--or" href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener" data-apparait>Book a discovery call</a>
+    <p class="finale__note" data-apparait>Free · 20 minutes · no obligation</p>
+    <a class="lien lien--fleche" href="contact.html" data-apparait>Or tell us about your event</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="pied">
+  <div class="enveloppe pied__grille">
+    <div class="pied__intro">
+      <p class="t-h3">Perfectly Orchestrated.</p>
+      <p>Weddings, gastronomy and corporate events. Montreal &amp; destinations.</p>
+      <a class="btn btn--or" href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Book a discovery call</a>
+    </div>
+    <nav class="pied__col" aria-label="Pages">
+      <p class="t-eyebrow">Explore</p>
+      <ul>
+        <li><a href="weddings.html">Weddings</a></li>
+        <li><a href="the-eden-plan.html">The Eden Plan</a></li>
+        <li><a href="rsvp.html">Wedding website &amp; RSVP</a></li>
+        <li><a href="gourmet.html">Eden Gourmet</a></li>
+        <li><a href="corporate.html">Corporate</a></li>
+        <li><a href="agency.html">The agency</a></li>
+      </ul>
+    </nav>
+    <div class="pied__col">
+      <p class="t-eyebrow">Book</p>
+      <ul>
+        <li><a href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Discovery call</a></li>
+        <li><a href="https://tidycal.com/1ydlyw1/clarityhour" target="_blank" rel="noopener">The Eden Session</a></li>
+        <li><a href="https://tidycal.com/1ydlyw1/eden-gourmet-brunch-reservation" target="_blank" rel="noopener">Brunch service</a></li>
+        <li><a href="https://www.agenceeden.com/product-page/the-eden-plan-wedding-planning-guide-pdf-excel" target="_blank" rel="noopener">Buy The Eden Plan</a></li>
+      </ul>
+    </div>
+    <div class="pied__col">
+      <p class="t-eyebrow">Write to us</p>
+      <ul>
+        <li><a href="mailto:info@agenceeden.com">info@agenceeden.com</a></li>
+        <li><a href="https://www.instagram.com/edenweddingservices" target="_blank" rel="noopener">@edenweddingservices</a></li>
+        <li><a href="contact.html">Contact form</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="enveloppe pied__bas">
+    <p class="pied__signature" aria-hidden="true">Agence Eden</p>
+    <p class="pied__legal">© 2026 Agence Eden · Events, weddings &amp; gastronomy</p>
+  </div>
+</footer>
+
+<div class="barre-mobile" data-barre-mobile>
+  <button class="barre-mobile__chapitres" type="button" aria-expanded="false" aria-controls="sommaire" data-sommaire-bouton>
+    <svg class="anneau" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15" /><circle class="anneau__progres" cx="18" cy="18" r="15" pathLength="100" /></svg>
+    <span class="barre-mobile__texte"><span data-chapitre-num>01</span><span data-chapitre-nom>Opening</span></span>
+  </button>
+  <a class="btn btn--or btn--petit" href="https://tidycal.com/1ydlyw1/30-minute-meeting" target="_blank" rel="noopener">Book a call</a>
+</div>
+<div class="sommaire" id="sommaire" data-sommaire hidden>
+  <p class="t-eyebrow">On this page</p>
+  <ol class="sommaire__liste" data-sommaire-liste></ol>
+  <button class="lien sommaire__haut" type="button" data-haut>Back to top ↑</button>
+</div>
+
+<script src="../assets/vendor/gsap.min.js" defer></script>
+<script src="../assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="../assets/vendor/lenis.min.js" defer></script>
+<script src="../assets/js/eden.js" defer></script>
+</body>
+</html>
